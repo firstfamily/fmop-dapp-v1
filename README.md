@@ -1,17 +1,6 @@
-# 初见运营维护管理应用 FMSOP Dapp v1
-![初见运营维护管理应用 FMSOP Dapp v1](document/taskman/fmsop_dapp_v1.png)
+# Biz table data for any team FMSOP Dapp v1
+![Biz table data for any team FMSOP Dapp v1](document/taskman/fmsop_dapp_v1.png)
 
-```HTML
-chenchunhai(陈春海) 09-02 15:31:59
-@吴明康@王闻天 研究演示 https://wails.app/quick_start.html#high-level-overview 
-go环境搭建请@杨尧、@易响帮助
-chenchunhai(陈春海) 09-04 09:23:17
-我已经搭建好了 ，报了两个bug，看看：
-
-https://github.com/wailsapp/wails/issues/222
-https://github.com/wailsapp/wails/issues/223
-庞启仁 加入了本次会话。
-```
 
 ## 技术栈
 
@@ -55,7 +44,7 @@ The choice of Golang comes from the fact that it has the same tooling on every p
 
 
 # FMOP Manager Dapp v1
-![初见运营维护管理应用 FMSOP Dapp v1](document/gxcel-manager-dapp.png)
+![Biz table data for any team FMSOP Dapp v1](document/gxcel-manager-dapp.png)
 
 ## 技术栈
 - [用户界面：Qt与HTML/JavaScript网页端通信和调用 new QWebChannel(socket, function(channel)](https://github.com/therecipe/qt/blob/5355937d17e9eee62460706cb9a033180014400e/internal/examples/webchannel/webview/index.html)
@@ -74,8 +63,8 @@ The choice of Golang comes from the fact that it has the same tooling on every p
 - [用户界面:This is part 5 of a series of demo apps helping you to understand Qt 5.7 for x-platform development on Android and iOS. For Tablets and Desktop Google recommends to use a SideBar – so I implented a SideBar which will be shown automagically in Landscape.](https://appbus.wordpress.com/2016/06/14/bottom-navigation-app/)
 
 ## RPA
-![初见运营维护管理应用 RPA_Graphics_Infographic_F](document/RPA_Graphics_Infographic_F.png)
-![初见运营维护管理应用 robotic-process-automation1](document/robotic-process-automation1.png)
+![Biz table data for any team RPA_Graphics_Infographic_F](document/RPA_Graphics_Infographic_F.png)
+![Biz table data for any team robotic-process-automation1](document/robotic-process-automation1.png)
 - [Robotics Process Automation(RPA) allows organizations to automate task just like a human being was doing them across application and systems. Robotic automation interacts with the existing IT architecture with no complex system integration required. RPA can be used to automate workflow, infrastructure, back office process which are labor intensive. These software bots can interact with an in-house application, website, user portal, etc. The RPA is a software program which runs on an end user's pc, laptop or mobile device. It is a sequence of commands which are executed by Bots under some defined set of business rules.](https://www.guru99.com/robotic-process-automation-tutorial.html)
 
 
