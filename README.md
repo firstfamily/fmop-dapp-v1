@@ -61,6 +61,7 @@ The choice of Golang comes from the fact that it has the same tooling on every p
 - [用户界面：如何编译使用了therecipe/qt的项目](https://www.cnblogs.com/apocelipes/p/9300335.html)
 - [用户界面：开发方式采用该作者的建议，Got-qt GUI Framework 一个利用Go和QML中构建跨平台GUI界面的框架,This is a framework to make desktop/mobile applications in Go with a GUI written in Qt Qml. It uses the Material framework from Google for the UI in Qml, and uses Go as a backend.  I just wanted an easy way to build desktop apps with Go.](https://github.com/amlwwalker/got-qt)
 - [用户界面:This is part 5 of a series of demo apps helping you to understand Qt 5.7 for x-platform development on Android and iOS. For Tablets and Desktop Google recommends to use a SideBar – so I implented a SideBar which will be shown automagically in Landscape.](https://appbus.wordpress.com/2016/06/14/bottom-navigation-app/)
+- [用户界面：在QML中使用QSystemTrayIcon(系统托盘)](https://blog.csdn.net/u011283226/article/details/79812221)
 
 ## RPA
 ![Biz table data for any team RPA_Graphics_Infographic_F](document/RPA_Graphics_Infographic_F.png)
