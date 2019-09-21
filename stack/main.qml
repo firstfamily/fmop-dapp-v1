@@ -75,7 +75,6 @@ ApplicationWindow {
            buttons: MessageDialog.Ok | MessageDialog.Cancel
         onAccepted: {
             console.log("And of course you could only agree.")
-            //Qt.quit()
         }
 
         Component.onCompleted: visible = false
@@ -90,7 +89,7 @@ ApplicationWindow {
         menu: Menu {
 
             MenuItem {
-                text: qsTr("Show")
+                text: qsTr("我在线上")
                 onTriggered: {
                         window.show()
                         window.raise()
@@ -98,33 +97,30 @@ ApplicationWindow {
                 }
             }
             MenuItem {
-                text: qsTr("messageDialog")
+                text: qsTr("忙碌")
                 onTriggered: messageDialog.open()
             }
             MenuItem {
-                text: qsTr("Quit2")
-                onTriggered: Qt.quit()
+                text: qsTr("隐身")
             }
             MenuItem {
-                text: qsTr("Quit3")
-                onTriggered: Qt.quit()
+                text: qsTr("离线")
             }
             MenuItem {
-                text: qsTr("Quit4")
+                text: qsTr("退出")
                 onTriggered: Qt.quit()
             }
         }
 
 
         onActivated: {
-            //menu.open()
             window.show()
             window.raise()
             window.requestActivate()
         }
 
         Component.onCompleted: {
-           showMessage("Message title", "Something important came up. Click this to know more.")
+           showMessage("FMOP STACK", "Something important came up. Click this to know more.")
         }
     }
 
