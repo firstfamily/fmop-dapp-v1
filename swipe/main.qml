@@ -124,6 +124,8 @@ ApplicationWindow {
         }
         PageAForm {
         }
+        ShapeShifting {
+        }
     }
 
 
