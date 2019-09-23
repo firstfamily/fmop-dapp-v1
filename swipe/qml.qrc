@@ -3,6 +3,14 @@
         <file>main.qml</file>
         <file>Page1Form.ui.qml</file>
         <file>Page2Form.ui.qml</file>
+        <file>Page3Form.ui.qml</file>
+        <file>Page4Form.ui.qml</file>
+        <file>Page5Form.ui.qml</file>
+        <file>Page6Form.ui.qml</file>
+        <file>Page7Form.ui.qml</file>
+        <file>Page8Form.ui.qml</file>
+        <file>Page9Form.ui.qml</file>
+        <file>PageAForm.ui.qml</file>
         <file>qtquickcontrols2.conf</file>
         <file>images/boat.png</file>
         <file>images/car.png</file>
