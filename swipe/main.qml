@@ -103,8 +103,9 @@ ApplicationWindow {
         anchors.fill: parent
         currentIndex: tabhBar.currentIndex
 
-        Page1Form {
+        Page1 {
         }
+
         Page2Form {
         }
         Page3Form {
