@@ -106,6 +106,9 @@ ApplicationWindow {
         Page1 {
         }
 
+        ShapeShifting {
+        }
+
         Page2Form {
         }
         Page3Form {

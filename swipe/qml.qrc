@@ -16,5 +16,11 @@
         <file>images/car.png</file>
         <file>images/house.png</file>
         <file>PetsModel.qml</file>
+        <file>ShapeShifting.qml</file>
+        <file>images/earth.jpeg</file>
+        <file>images/jupiter.jpeg</file>
+        <file>images/mars.jpeg</file>
+        <file>images/mercury.jpeg</file>
+        <file>images/venus.jpeg</file>
     </qresource>
 </RCC>
