@@ -5,6 +5,29 @@ Rectangle {
 
     width: 300; height: 400
 
+
+    Rectangle {
+        anchors.fill: parent
+        gradient: Gradient {
+            GradientStop { position: 0.0; color: "#4a4a4a" }
+            GradientStop { position: 1.0; color: "#2b2b2b" }
+        }
+    }
+
+
+    ListView {
+        id: view
+
+        anchors { fill: parent; margins: 2 }
+
+        model: PetsModel {}
+        delegate: dragDelegate
+
+        spacing: 4
+        cacheBuffer: 50
+    }
+
+
     Component {
         id: dragDelegate
 
@@ -29,16 +52,5 @@ Rectangle {
                 Text { text: 'Size: ' + size }
             }
         }
-    }
-    ListView {
-        id: view
-
-        anchors { fill: parent; margins: 2 }
-
-        model: PetsModel {}
-        delegate: dragDelegate
-
-        spacing: 4
-        cacheBuffer: 50
     }
 }

@@ -4,8 +4,9 @@ import QtQuick.Controls 1.4
 
 import foo 1.0
 
-Page {
-    width: 600
+Item {
+    width: 300
+    height: 480
 
     TreeModel {
         id: treemodel
@@ -22,9 +23,22 @@ Page {
                 }
             }
         }
+        TreeElement{
+            property string phrase: "Hey"
+            property string year: "2018"
+        }
+        TreeElement{
+            property string phrase: "Hey"
+            property string year: "2019"
+        }
+        TreeElement{
+            property string phrase: "Hey"
+            property string year: "2020"
+        }
     }
     TreeView {
         anchors.fill: parent
+        anchors.bottomMargin: 75
         model: treemodel
         TableViewColumn {
             title: "Name"

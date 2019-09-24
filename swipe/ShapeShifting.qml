@@ -92,10 +92,12 @@ Item {
             Item {
                 id: factsView
 
+                height: 300
+
                 anchors.top: image.bottom
                 anchors.left: parent.left
                 anchors.right: parent.right
-                anchors.bottom: parent.bottom
+                //anchors.bottom: parent.bottom
 
                 opacity: 0
 

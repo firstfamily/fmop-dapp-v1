@@ -65,6 +65,9 @@ The choice of Golang comes from the fact that it has the same tooling on every p
 - [A curated list of awesome Qt and QML libraries, resources, projects, and shiny things.](https://github.com/mikalv/awesome-qt-qml)
 - [ModelView with QTreeView and QFileSystemModel](https://www.bogotobogo.com/Qt/Qt5_QTreeView_QFileSystemModel_ModelView_MVC.php)
 - [没有可以使用TreeView的本机QML模型，所以我实现了一个试图通用的模型](https://github.com/eyllanesc/stackoverflow/tree/master/questions/56264007)
+- [一套酷炫的QtQuick/Qml基础库和示例](https://github.com/jaredtao/TaoQuick)
+- [qml TableView 表格编辑器](https://github.com/jaredtao/TableEdit)
+- [Qml组件化编程](https://jaredtao.github.io/)
 
 ## RPA
 ![Biz table data for any team RPA_Graphics_Infographic_F](document/RPA_Graphics_Infographic_F.png)
