@@ -1,5 +1,15 @@
+#include "treemodel.h"
+#include "treeelement.h"
+
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
+
+static void registertypes(){
+    qmlRegisterType<TreeElement>("foo", 1, 0, "TreeElement");
+    qmlRegisterType<TreeModel>("foo", 1, 0, "TreeModel");
+}
+
+Q_COREAPP_STARTUP_FUNCTION(registertypes)
 
 int main(int argc, char *argv[])
 {

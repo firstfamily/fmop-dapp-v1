@@ -109,7 +109,7 @@ ApplicationWindow {
         ShapeShifting {
         }
 
-        Page2Form {
+        FolderTreeView {
         }
         Page3Form {
         }
