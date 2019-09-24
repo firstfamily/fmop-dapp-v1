@@ -68,6 +68,7 @@ The choice of Golang comes from the fact that it has the same tooling on every p
 - [一套酷炫的QtQuick/Qml基础库和示例](https://github.com/jaredtao/TaoQuick)
 - [qml TableView 表格编辑器](https://github.com/jaredtao/TableEdit)
 - [Qml组件化编程](https://jaredtao.github.io/)
+- [Best_Practices_in_Qt_Quick](http://cdn2.hubspot.net/hubfs/149513/Roadshow_US/Best_Practices_in_Qt_Quick.pdf)
 
 ## RPA
 ![Biz table data for any team RPA_Graphics_Infographic_F](document/RPA_Graphics_Infographic_F.png)

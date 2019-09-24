@@ -1,18 +1,44 @@
-import QtQuick 2.12
-import QtQuick.Controls 2.5
+import QtQuick 2.0
 
-Page {
-    width: 600
-    height: 400
+Grid {
+    width: 100; height: 100
+    columns: 2
+    focus: true
 
-    header: Label {
-        text: qsTr("Page 4")
-        font.pixelSize: Qt.application.font.pixelSize * 2
-        padding: 10
+    Rectangle {
+        id: topLeft
+        width: 50; height: 50
+        color: focus ? "red" : "lightgray"
+        focus: true
+
+        KeyNavigation.right: topRight
+        KeyNavigation.down: bottomLeft
     }
 
-    Label {
-        text: qsTr("You are on Page 4.")
-        anchors.centerIn: parent
+    Rectangle {
+        id: topRight
+        width: 50; height: 50
+        color: focus ? "red" : "lightgray"
+
+        KeyNavigation.left: topLeft
+        KeyNavigation.down: bottomRight
+    }
+
+    Rectangle {
+        id: bottomLeft
+        width: 50; height: 50
+        color: focus ? "red" : "lightgray"
+
+        KeyNavigation.right: bottomRight
+        KeyNavigation.up: topLeft
+    }
+
+    Rectangle {
+        id: bottomRight
+        width: 50; height: 50
+        color: focus ? "red" : "lightgray"
+
+        KeyNavigation.left: bottomLeft
+        KeyNavigation.up: topRight
     }
 }

@@ -250,7 +250,7 @@ ApplicationWindow {
         TabButton {
             text: qsTr("消息任务")
             onClicked: {
-                swipeView.setCurrentIndex(0)
+                swipeView.setCurrentIndex(0);
             }
         }
         TabButton {
