@@ -117,3 +117,25 @@ The choice of Golang comes from the fact that it has the same tooling on every p
 
     [demo setup got qt (use subtitles)](https://www.youtube.com/watch?v=T96KOy4sTJ8&feature=youtu.be)
 
+## Golang+QtQuick QML Macos 开发环境搭建
+    ```
+    ConandeMacBook-Pro:examples conanchen$ go version
+    go version go1.13 darwin/amd64
+
+    ConandeMacBook-Pro:examples conanchen$ env |grep GO
+    GO111MODULE=on
+    GOPROXY=https://goproxy.io
+    GOROOT=/usr/local/Cellar/go/1.13/libexec
+    GOPATH=/Users/conanchen/go
+    ConandeMacBook-Pro:examples conanchen$ env |grep QT
+    QT_HOMEBREW=true
+    QT_DIR=/usr/local/opt/qt    
+
+
+    ```
+    *In Module mode*
+    ```
+    xcode-select --install; git clone https://github.com/therecipe/examples.git && cd ./examples && go mod download && go get -u -v github.com/therecipe/qt/cmd/qtdeploy && go get -u -v github.com/therecipe/qt/cmd/... && go mod vendor && git clone https://github.com/therecipe/env_darwin_amd64_513.git vendor/github.com/therecipe/env_darwin_amd64_513 && $(go env GOPATH)/bin/qtdeploy test desktop ./basic/widgets
+
+    ```
+
