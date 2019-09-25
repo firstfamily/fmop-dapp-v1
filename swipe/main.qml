@@ -20,8 +20,6 @@ ApplicationWindow {
     // 根据个人操作实时提示业务知识
     title: qsTr("朵拉助理")
 
-
-
     header: ToolBar{
 
         property bool backToolButtonVisible: false
@@ -241,7 +239,6 @@ ApplicationWindow {
         PageB{}
     }
 
-
     footer: TabBar {
         id: tabfBar
         //currentIndex: swipeView.currentIndex
@@ -278,10 +275,6 @@ ApplicationWindow {
             }
         }
     }
-
-
-
-
 
     SystemTrayIcon {
         visible: true
