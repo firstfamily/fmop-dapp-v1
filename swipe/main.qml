@@ -9,7 +9,7 @@ import "common"
 ApplicationWindow {
     id: window
     visible: true
-    width: Screen.width/6
+    width: Math.max(360,Screen.width/6)
     height: Screen.height - tabfBar.height * 4
 
     //height: Screen.desktopAvailableHeight - tabfBar.height * 2
@@ -130,51 +130,51 @@ ApplicationWindow {
             currentIndex: swipeView.currentIndex
 
             TabButton {
-                width: Math.max(100, tabhBar.width / 6)
+                width: Math.max(80, tabhBar.width / 6)
                 text: qsTr("消息0")
             }
             TabButton {
-                width: Math.max(100, tabhBar.width / 6)
+                width: Math.max(80, tabhBar.width / 6)
                 text: qsTr("任务1")
             }
             TabButton {
-                width: Math.max(100, tabhBar.width / 6)
+                width: Math.max(80, tabhBar.width / 6)
                 text: qsTr("组织2")
             }
             TabButton {
-                width: Math.max(100, tabhBar.width / 6)
+                width: Math.max(80, tabhBar.width / 6)
                 text: qsTr("制度3")
             }
             TabButton {
-                width: Math.max(100, tabhBar.width / 6)
+                width: Math.max(80, tabhBar.width / 6)
                 text: qsTr("部门知识4")
             }
             TabButton {
-                width: Math.max(100, tabhBar.width / 6)
+                width: Math.max(80, tabhBar.width / 6)
                 text: qsTr("公司知识5")
             }
             TabButton {
-                width: Math.max(100, tabhBar.width / 6)
+                width: Math.max(80, tabhBar.width / 6)
                 text: qsTr("个人资料6")
             }
             TabButton {
-                width: Math.max(100, tabhBar.width / 6)
+                width: Math.max(80, tabhBar.width / 6)
                 text: qsTr("通讯录7")
             }
             TabButton {
-                width: Math.max(100, tabhBar.width / 6)
+                width: Math.max(80, tabhBar.width / 6)
                 text: qsTr("茶饮8")
             }
             TabButton {
-                width: Math.max(100, tabhBar.width / 6)
+                width: Math.max(80, tabhBar.width / 6)
                 text: qsTr("咖啡9")
             }
             TabButton {
-                width: Math.max(100, tabhBar.width / 6)
+                width: Math.max(80, tabhBar.width / 6)
                 text: qsTr("酒吧10")
             }
             TabButton {
-                width: Math.max(100, tabhBar.width / 6)
+                width: Math.max(80, tabhBar.width / 6)
                 text: qsTr("店铺10")
             }
         }
