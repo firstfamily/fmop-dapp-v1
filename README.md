@@ -133,9 +133,56 @@ The choice of Golang comes from the fact that it has the same tooling on every p
 
 
     ```
+
     *In Module mode*
+    
     ```
     xcode-select --install; git clone https://github.com/therecipe/examples.git && cd ./examples && go mod download && go get -u -v github.com/therecipe/qt/cmd/qtdeploy && go get -u -v github.com/therecipe/qt/cmd/... && go mod vendor && git clone https://github.com/therecipe/env_darwin_amd64_513.git vendor/github.com/therecipe/env_darwin_amd64_513 && $(go env GOPATH)/bin/qtdeploy test desktop ./basic/widgets
+
+    ```
+
+    还不能把自己的工程设为go module工程，否则 qtdeploy test desktop ./basic/quick 失败
+
+    ```
+    ConandeMacBook-Pro:quick conanchen$ go mod init github.com/firstfamily/quick
+    go: creating new go.mod: module github.com/firstfamily/quick
+    ConandeMacBook-Pro:quick conanchen$ go get ./...
+    go: finding github.com/therecipe/qt latest
+    # github.com/therecipe/qt/quickcontrols2
+    quickcontrols2.cpp:9:10: fatal error: 'QByteArray' file not found
+    # github.com/therecipe/qt/core
+    core.cpp:10:3: error: ------------------------------------------------------------------
+    core.cpp:11:3: error: please run: '$(go env GOPATH)/bin/qtsetup'
+    core.cpp:12:3: error: more info here: https://github.com/therecipe/qt/wiki/Installation
+    core.cpp:13:3: error: ------------------------------------------------------------------
+    core.cpp:15:10: fatal error: 'QAbstractAnimation' file not found
+    ConandeMacBook-Pro:quick conanchen$ pwd
+    /Users/conanchen/git/therecipe/examples/basic/quick
+    ConandeMacBook-Pro:quick conanchen$ cd ../..
+    ConandeMacBook-Pro:examples conanchen$ qtdeploy  test desktop ./basic/quick
+    WARN[0003] parser.LoadModule                             error=EOF module=Qml
+    WARN[0003] parser.LoadModule                             error=EOF module=Core
+    WARN[0003] parser.LoadModule                             error=EOF module=Widgets
+    WARN[0003] parser.LoadModule                             error=EOF module=Gui
+    WARN[0003] parser.LoadModule                             error=EOF module=QuickControls2
+    WARN[0003] parser.LoadModule                             error=EOF module=Quick
+    WARN[0003] parser.LoadModule                             error=EOF module=Network
+    ERRO[0005] failed to run command                         _func=RunCmd cmd="bash -c /usr/local/bin/go build -p 4 -v -trimpath -o /Users/conanchen/git/therecipe/examples/basic/quick/deploy/darwin/quick.app/Contents/MacOS/quick -tags=minimal -ldflags=all=\"-w\"" dir=/Users/conanchen/git/therecipe/examples/basic/quick env="GOFLAGS=-mod=vendor TERM=xterm-256color GOARCH=amd64 SHELL=/bin/bash LC_CTYPE=zh_CN.UTF-8 QT_DIR=/usr/local/opt/qt GOROOT=/usr/local/Cellar/go/1.13/libexec LDFLAGS=-L/usr/local/opt/qt/lib FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn XPC_FLAGS=0x0 OSTYPE=darwin HTTP_PROXY=127.0.0.1:1087 LOGNAME=conanchen CGO_ENABLED=1 CPPFLAGS=-I/usr/local/opt/qt/include __CF_USER_TEXT_ENCODING=0x1F5:0x19:0x34 QT_HOMEBREW=true PWD=/Users/conanchen/git/therecipe/examples PATH=/usr/local/opt/qt/bin:/Users/conanchen/go/bin:/Users/conanchen/Library/flutter/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/Cellar/go/1.13/libexec/bin:/Users/conanchen/go/bin XPC_SERVICE_NAME=0 SHLVL=1 _=/Users/conanchen/go/bin/qtdeploy OLDPWD=/Users/conanchen/git/therecipe/examples/basic/quick PUB_HOSTED_URL=https://pub.flutter-io.cn HOME=/Users/conanchen USER=conanchen SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.CbslYBimHQ/Listeners GOPATH=/Users/conanchen/go TMPDIR=/var/folders/td/0ny4r8md2vg9lz2t2knwr7yr0000gn/T/ Apple_PubSub_Socket_Render=/private/tmp/com.apple.launchd.RMOJ9UYPA6/Render GO111MODULE=on HTTPS_PROXY=127.0.0.1:1087 GOOS=darwin" error="exit status 2" name="build for darwin on darwin"
+    github.com/firstfamily/quick
+    # github.com/firstfamily/quick
+    ./main.go:17:2: undefined: core.QCoreApplication_SetAttribute
+    ./main.go:17:37: undefined: core.Qt__AA_EnableHighDpiScaling
+    ./main.go:20:2: undefined: widgets.NewQApplication
+    ./main.go:25:2: undefined: quickcontrols2.QQuickStyle_SetStyle
+    ./main.go:31:10: undefined: quick.NewQQuickView
+    ./main.go:32:22: undefined: core.NewQSize2
+    ./main.go:33:21: undefined: quick.QQuickView__SizeRootObjectToView
+    ./main.go:40:17: undefined: core.QUrl_FromLocalFile
+    ./main.go:48:2: undefined: widgets.QApplication_Exec
+
+    ConandeMacBook-Pro:examples conanchen$ rm basic/quick/go.mod 
+    ConandeMacBook-Pro:examples conanchen$ qtdeploy  test desktop ./basic/quick
+    ConandeMacBook-Pro:examples conanchen$ 
 
     ```
 
