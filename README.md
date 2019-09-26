@@ -118,7 +118,9 @@ The choice of Golang comes from the fact that it has the same tooling on every p
     [demo setup got qt (use subtitles)](https://www.youtube.com/watch?v=T96KOy4sTJ8&feature=youtu.be)
 
 ## Golang+QtQuick QML Macos 开发环境搭建
-    ```
+
+    ```bash
+    
     ConandeMacBook-Pro:examples conanchen$ go version
     go version go1.13 darwin/amd64
 
@@ -186,3 +188,64 @@ The choice of Golang comes from the fact that it has the same tooling on every p
 
     ```
 
+
+# Win7 下用Golang开发GUI程序（01）安装Golang、QT并设置相关变量
+
+- [用Golang开发GUI程序（01）安装Golang、QT并设置相关变量](https://www.yumenaka.net/2019/04/23/golang_gui_qt_01/)
+- [MSYS2 + MinGW-w64 + Git + gVim 环境配置](http://dantvt.is-programmer.com/posts/63161.html)
+
+## msys2 [去官网下载安装包，一路下一步即可](https://www.msys2.org/)
+
+```shell
+    我把安装路径改成了“ D:\msys64 ”
+```
+
+**启动 MSYS2 MinGW 64-bit**
+
+>   ![利用msys2安装QT包](document/msys2toinstall.png)
+
+```shell
+    最好设置梯子代理
+    # export http_proxy=127.0.0.1:1087
+    # export https_proxy=127.0.0.1:1087
+
+    安装QT相关包
+    # pacman -Syyu
+    # pacman -S gcc git mingw-w64-x86_64-go （安装golang）
+    # pacman -S mingw-w64-x86_64-qt-creator mingw-w64-x86_64-qt5
+    # pacman -S mingw-w64-x86_64-qt-creator mingw-w64-x86_64-qt5-static
+    # pacman -Scc  (清除安装包，最好不要)
+
+```
+
+## 设置环境变量
+```shell
+    设置
+    # export QT_DIR=/d/msys64/mingw64/qt5-static
+    # export QT_MSYS2_DIR=/d/msys64
+    # export QT_MSYS2_ARCH=amd64
+    # export QT_WEBKIT=true
+    # export QT_MSYS2_STATIC=true
+    # export GOPATH=/e/conan/go
+    # export GOPROXY=https://goproxy.io
+    # export GOROOT=/mingw64/lib/go
+
+    # export PATH=$PATH:$GOROOT/bin
+    # export PATH=$PATH:$GOPATH/bin
+
+    最好设置梯子代理
+    # export http_proxy=127.0.0.1:1087
+    # export https_proxy=127.0.0.1:1087
+
+
+```
+
+
+## 安装therecipe/qt
+```bash
+
+    # go get -v github.com/therecipe/qt/cmd/...
+    # qtsetup
+
+
+```
