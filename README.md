@@ -20,7 +20,7 @@ The choice of Golang comes from the fact that it has the same tooling on every p
 - [监控剪贴板：Monitor starts monitoring the clipboard for changes. When a change is detected, it is sent over the channel.](https://github.com/spy16/clipboard/blob/master/cmd/monitor/main.go)
 - [监控剪贴板：WriteAll is broken on windows #212, clipb, _ := robotgo.ReadAll()](https://github.com/go-vgo/robotgo/issues/212)
 - [Golang 跨平台自动化系统, binding 其他编程语言; 控制键盘鼠标位图和读取屏幕，窗口句柄以及全局事件监听](https://cloud.tencent.com/developer/article/1422348)
-
+- [Golang Slice fancy functions like pop, push, shift etc.](https://github.com/golang/go/wiki/SliceTricks)
 - [获取浏览地址：Go lang check if active window the window yo are looking for](https://gist.github.com/obonyojimmy/f80a41b4adb18fe5389e98b64b27f21d)
 - [获取浏览地址：how to get URL form any web browser (like firefox,ie,google chrome,...) in C#](https://www.codeproject.com/Questions/354848/how-to-get-URL-form-any-web-browser-like-firefox-i)
 - [获取浏览地址：Golang Desktop Automation. Control the mouse, keyboard, bitmap, read the screen, Window Handle and global event listener.](https://github.com/go-vgo/robotgo)
@@ -134,9 +134,30 @@ The choice of Golang comes from the fact that it has the same tooling on every p
     QT_DIR=/usr/local/opt/qt    
 
 
+
     ```
 
-    *In Module mode*
+    **暂时只试通 GOPATH模式**
+    ```bash
+  $  export GO111MODULE=off
+  $  curl www.google.com
+  $  export http_proxy=127.0.0.1:1087
+  $  export https_proxy=127.0.0.1:1087
+  $ go get -u -v github.com/therecipe/qt/cmd/... && $(go env GOPATH)/bin/qtsetup test && $(go env GOPATH)/bin/qtsetup -test=false
+
+  $ cd /Users/conanchen/go/src/github.com/therecipe/qt/internal/examples
+  $ qtdeploy test desktop showcases/wallet
+
+  $ git clone https://github.com/therecipe/examples.git
+  $ cd examples; pwd
+    /Users/conanchen/git/therecipe/examples
+  $ qtdeploy test desktop ./basic/widgets
+  $ go run ./basic/widgets/main.go  (编译好后同样可以直接用go run 运行)
+
+    ```
+
+
+    **In Module mode**
     
     ```
     xcode-select --install; git clone https://github.com/therecipe/examples.git && cd ./examples && go mod download && go get -u -v github.com/therecipe/qt/cmd/qtdeploy && go get -u -v github.com/therecipe/qt/cmd/... && go mod vendor && git clone https://github.com/therecipe/env_darwin_amd64_513.git vendor/github.com/therecipe/env_darwin_amd64_513 && $(go env GOPATH)/bin/qtdeploy test desktop ./basic/widgets
