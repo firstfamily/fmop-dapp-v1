@@ -89,13 +89,11 @@ The choice of Golang comes from the fact that it has the same tooling on every p
 
 - 打开PowerShell
 
-    ```bash
+```bash
     PS E:\conan> go version
 
     go version go1.13 windows/amd64
-    ```
 
-    ```bash
     PS E:\conan> dir env:
 
     GO111MODULE                    on
@@ -107,27 +105,27 @@ The choice of Golang comes from the fact that it has the same tooling on every p
     PATH                           D:\tools\go\bin;E:\conan\go\bin;
 
 
-    ```
+```
 
-    [therecipe/qt Installation on Windows](https://github.com/therecipe/qt/wiki/Installation-on-Windows)
-    ```
+[therecipe/qt Installation on Windows](https://github.com/therecipe/qt/wiki/Installation-on-Windows)
+    
+```
     In Module mode
 
     PS E:\conan> git clone https://github.com/therecipe/examples.git ; cd ./examples ; go mod download ; go get -u -v github.com/therecipe/qt/cmd/qtdeploy ; go get -u -v github.com/therecipe/qt/cmd/... ; go mod vendor ; git clone https://github.com/therecipe/env_windows_amd64_513.git vendor/github.com/therecipe/env_windows_amd64_513 ; $env:GOPATH\bin\qtdeploy test desktop ./basic/widgets
-
-    ```
+```
     
 - 打开cmd
-    ```
+```
     d:\git\examples>where qtdeploy
     E:\conan\go\bin\qtdeploy.exe
-    ```    
+```    
 
-    [demo setup got qt (use subtitles)](https://www.youtube.com/watch?v=T96KOy4sTJ8&feature=youtu.be)
+[demo setup got qt (use subtitles)](https://www.youtube.com/watch?v=T96KOy4sTJ8&feature=youtu.be)
 
 ## Golang+QtQuick QML Macos 开发环境搭建
 
-    ```bash
+```bash
     
     ConandeMacBook-Pro:examples conanchen$ go version
     go version go1.13 darwin/amd64
@@ -140,13 +138,11 @@ The choice of Golang comes from the fact that it has the same tooling on every p
     ConandeMacBook-Pro:examples conanchen$ env |grep QT
     QT_HOMEBREW=true
     QT_DIR=/usr/local/opt/qt    
+```
 
+**暂时只试通 GOPATH模式**
 
-
-    ```
-
-    **暂时只试通 GOPATH模式**
-    ```bash
+```bash
   $  export GO111MODULE=off
   $  curl www.google.com
   $  export http_proxy=127.0.0.1:1087
@@ -162,19 +158,19 @@ The choice of Golang comes from the fact that it has the same tooling on every p
   $ qtdeploy test desktop ./basic/widgets
   $ go run ./basic/widgets/main.go  (编译好后同样可以直接用go run 运行)
 
-    ```
+```
 
 
-    **In Module mode**
+**In Module mode**
     
-    ```
+```
     xcode-select --install; git clone https://github.com/therecipe/examples.git && cd ./examples && go mod download && go get -u -v github.com/therecipe/qt/cmd/qtdeploy && go get -u -v github.com/therecipe/qt/cmd/... && go mod vendor && git clone https://github.com/therecipe/env_darwin_amd64_513.git vendor/github.com/therecipe/env_darwin_amd64_513 && $(go env GOPATH)/bin/qtdeploy test desktop ./basic/widgets
 
-    ```
+```
 
-    还不能把自己的工程设为go module工程，否则 qtdeploy test desktop ./basic/quick 失败
+还不能把自己的工程设为go module工程，否则 qtdeploy test desktop ./basic/quick 失败
 
-    ```
+```
     ConandeMacBook-Pro:quick conanchen$ go mod init github.com/firstfamily/quick
     go: creating new go.mod: module github.com/firstfamily/quick
     ConandeMacBook-Pro:quick conanchen$ go get ./...
@@ -215,7 +211,7 @@ The choice of Golang comes from the fact that it has the same tooling on every p
     ConandeMacBook-Pro:examples conanchen$ qtdeploy  test desktop ./basic/quick
     ConandeMacBook-Pro:examples conanchen$ 
 
-    ```
+```
 
 
 # Win7 下用Golang开发GUI程序（01）安装Golang、QT并设置相关变量
