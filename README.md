@@ -27,6 +27,8 @@ The choice of Golang comes from the fact that it has the same tooling on every p
 - [获取输入字符：The hook itself is asynchronous, you can consider calling the hook code. ](https://github.com/go-vgo/robotgo/issues/214)
 - [C#--知道了某个浏览器窗口的句柄，可以获取到里面的 HTML 吗？](https://www.v2ex.com/t/596698)
 - [如何获取Windows中活动的Google Chrome标签的网址？](https://oomake.com/question/3200238)
+- [Qml全局按键](https://blog.csdn.net/zhengtianzuo06/article/details/78414871)
+
 
 - [三方登录：Easy social login in Go lang](https://codelike.pro/easy-social-login-oauth-in-go-lang/)
 - [三方登录：Choose a subpackage. Register the LoginHandler and CallbackHandler for web logins or the TokenHandler for (mobile) token logins.](https://github.com/dghubble/gologin)
@@ -69,6 +71,12 @@ The choice of Golang comes from the fact that it has the same tooling on every p
 - [qml TableView 表格编辑器](https://github.com/jaredtao/TableEdit)
 - [Qml组件化编程](https://jaredtao.github.io/)
 - [Best_Practices_in_Qt_Quick](http://cdn2.hubspot.net/hubfs/149513/Roadshow_US/Best_Practices_in_Qt_Quick.pdf)
+
+- [58到家通用实时消息平台架构细节（Qcon2016）](https://mp.weixin.qq.com/s?__biz=MjM5ODYxMDA5OQ==&mid=2651959410&idx=1&sn=b91b5721ca394d15fb391097eddb752d&scene=21)
+- [The Leader in Open Source IoT Messaging Scalable and Reliable Real-time MQTT Messaging Engine for IoT in 5G Era](https://www.emqx.io/)
+- [Guidance on using emqttd for a chat app](https://github.com/emqx/emqx/issues/634)
+
+- ![Gxcel application architecture SAAS](document/gxcel-arch.png)
 
 ## RPA
 ![Biz table data for any team RPA_Graphics_Infographic_F](document/RPA_Graphics_Infographic_F.png)
