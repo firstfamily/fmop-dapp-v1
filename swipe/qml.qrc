@@ -47,5 +47,8 @@
         <file>common/SwitchWithLeftLabel.qml</file>
         <file>common/VerticalDivider.qml</file>
         <file>PageB.qml</file>
+        <file>AppWinIdx.qml</file>
+        <file>AppWinFull.qml</file>
+        <file>common/Constants.qml</file>
     </qresource>
 </RCC>
