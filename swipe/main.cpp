@@ -1,6 +1,8 @@
 #include "treemodel.h"
 #include "treeelement.h"
 
+#include <QFontDatabase>
+#include <QDebug>
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 
@@ -16,6 +18,11 @@ int main(int argc, char *argv[])
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 
     QGuiApplication app(argc, argv);
+
+    QFontDatabase fontDatabase;
+    if (fontDatabase.addApplicationFont(":/fonts/fontello.ttf") == -1)
+        qWarning() << "Failed to load fontello.ttf";
+
 
     //最后一个可视窗口关闭时，不退出程序
     app.setQuitOnLastWindowClosed(false);
