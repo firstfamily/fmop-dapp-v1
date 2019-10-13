@@ -51,5 +51,8 @@
         <file>AppWinFull.qml</file>
         <file>common/Constants.qml</file>
         <file>fonts/fontello.ttf</file>
+        <file>AppWinChats.qml</file>
+        <file>ConversationPage.qml</file>
+        <file>ChatToolBar.qml</file>
     </qresource>
 </RCC>

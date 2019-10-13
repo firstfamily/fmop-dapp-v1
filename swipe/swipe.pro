@@ -1,4 +1,4 @@
-QT += quick
+QT += qml quick sql
 
 CONFIG += c++11
 
@@ -15,6 +15,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
+        sqlconversationmodel.cpp \
         treeelement.cpp \
         treemodel.cpp
 
@@ -35,5 +36,6 @@ DISTFILES += \
     PageB.qml
 
 HEADERS += \
+    sqlconversationmodel.h \
     treeelement.h \
     treemodel.h
