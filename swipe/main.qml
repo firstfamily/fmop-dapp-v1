@@ -18,6 +18,10 @@ Item {
         id: idxappwin
     }
 
+    AppWinChats{
+        id: chatsappwin
+    }
+
     SystemTrayIcon {
         visible: true
         icon.source: "qrc:/images/house.png"
@@ -40,6 +44,14 @@ Item {
                         fullappwin.show()
                         fullappwin.raise()
                         fullappwin.requestActivate()
+                }
+            }
+            MenuItem {
+                text: qsTr("多屏聊面板")
+                onTriggered: {
+                        chatsappwin.show()
+                        chatsappwin.raise()
+                        chatsappwin.requestActivate()
                 }
             }
             MenuSeparator{
