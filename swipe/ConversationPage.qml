@@ -147,7 +147,7 @@ Page {
             id: pane
             Layout.fillWidth: true
 
-            RowLayout {
+            ColumnLayout {
                 width: parent.width
 
                 TextArea {
@@ -159,6 +159,7 @@ Page {
 
                 Button {
                     id: sendButton
+                    Layout.fillWidth: true
                     text: qsTr("Send")
                     enabled: messageField.length > 0
                     onClicked: {
