@@ -1,3 +1,4 @@
+#include "imagemodel.h"
 #include "treemodel.h"
 #include "treeelement.h"
 #include "sqlconversationmodel.h"
@@ -14,6 +15,7 @@ static void registertypes(){
     qmlRegisterType<TreeElement>("foo", 1, 0, "TreeElement");
     qmlRegisterType<TreeModel>("foo", 1, 0, "TreeModel");
     qmlRegisterType<SqlConversationModel>("foo", 1, 0, "SqlConversationModel");
+    qmlRegisterType<ImageModel>("ImageModel", 1, 0, "ImageModel");
 }
 
 Q_COREAPP_STARTUP_FUNCTION(registertypes)

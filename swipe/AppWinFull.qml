@@ -7,12 +7,14 @@ import QtQuick.Layouts 1.3
 import Qt.labs.settings 1.0
 import "common"
 
+import ImageModel 1.0
+
 
 ApplicationWindow {
     id: fullappwin
     visible: true
-    width: Math.max(640,Screen.width/6)
-    height: 480
+    width: 1024
+    height: 640
 
     Component.onCompleted: {
         //height: Screen.desktopAvailableHeight - tabfBar.height * 2
@@ -279,14 +281,39 @@ ApplicationWindow {
                 SplitView.fillWidth: true
 
                 orientation: Qt.Vertical
-                Rectangle {
+                Column {
                     SplitView.fillWidth: true
                     SplitView.fillHeight: true
-                    color: "lightgray"
-                    Label {
-                        text: "View 2.1"
-                        anchors.centerIn: parent
+                    width: 800
+                    TextField {
+                        id: searchBox
+
+                        placeholderText: "Search..."
+                        inputMethodHints: Qt.ImhNoPredictiveText
+
+                        width: 800
                     }
+
+                    //! [tableview]
+                    TableView {
+
+                        id: tableView
+                        width: 800
+                        height:480
+
+                        anchors.top:searchBox.bottom
+                        anchors.bottom:parent.bottom
+                        anchors.left:parent.left
+                        anchors.right:parent.right
+
+                        model: ImageModel {
+                            source: ":/qt.png"
+                        }
+
+                        delegate: pixelDelegate
+                    }
+                    //! [tableview]
+
                 }
                 Rectangle {
                     SplitView.minimumHeight:  200
@@ -311,5 +338,49 @@ ApplicationWindow {
 
     }
 
+
+
+    //! [pixelcomponent]
+    Component {
+        id: pixelDelegate
+
+        Item {
+            readonly property real gray: model.display / 255.0
+            readonly property real size: 16
+
+            implicitWidth: size
+            implicitHeight: size
+            //! [pixelcomponent]
+
+            //! [rectshape]
+            Rectangle {
+                id: rect
+                anchors.centerIn: parent
+                color: "#09102b"
+                radius: size - gray * size
+                implicitWidth: radius
+                implicitHeight: radius
+                //! [rectshape]
+
+                //! [animation]
+                ColorAnimation on color {
+                    id: colorAnimation
+                    running: false
+                    to: "#41cd52"
+                    duration: 1500
+                }
+                //! [animation]
+            }
+
+            //! [interaction]
+            MouseArea {
+                anchors.fill: parent
+                hoverEnabled: true
+                onEntered: rect.color = "#cecfd5"
+                onExited: colorAnimation.start()
+            }
+            //! [interaction]
+        }
+    }
 
 }

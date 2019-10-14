@@ -14,12 +14,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+        imagemodel.cpp \
         main.cpp \
         sqlconversationmodel.cpp \
         treeelement.cpp \
         treemodel.cpp
 
-RESOURCES += qml.qrc
+RESOURCES += qml.qrc qt.png
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH =
@@ -33,9 +34,11 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 DISTFILES += \
-    PageB.qml
+    PageB.qml \
+    qt.png
 
 HEADERS += \
+    imagemodel.h \
     sqlconversationmodel.h \
     treeelement.h \
     treemodel.h
