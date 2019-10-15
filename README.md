@@ -72,11 +72,21 @@ The choice of Golang comes from the fact that it has the same tooling on every p
 - [Qml组件化编程](https://jaredtao.github.io/)
 - [Best_Practices_in_Qt_Quick](http://cdn2.hubspot.net/hubfs/149513/Roadshow_US/Best_Practices_in_Qt_Quick.pdf)
 
-- [58到家通用实时消息平台架构细节（Qcon2016）](https://mp.weixin.qq.com/s?__biz=MjM5ODYxMDA5OQ==&mid=2651959410&idx=1&sn=b91b5721ca394d15fb391097eddb752d&scene=21)
-- [The Leader in Open Source IoT Messaging Scalable and Reliable Real-time MQTT Messaging Engine for IoT in 5G Era](https://www.emqx.io/)
-- [Guidance on using emqttd for a chat app](https://github.com/emqx/emqx/issues/634)
-
+- [通过WebChannel/WebSockets与QML中的HTML交互](https://www.cnblogs.com/suRimn/p/10238720.html)
+- [基于 QWebChannel 的前端通信方案:本文将结合自身在开发中的一些经历，将从前端的角度探讨 QWebChannel 在 client 端实例化的本质，以及如何将 QWebChannel 集成到 Vue.js 等类似前端框架中。](https://juejin.im/post/5d46b1966fb9a06afe127b15)
+- [最清晰Qt与JS通过qwebchannel交互例子](https://blog.csdn.net/sunnyloves/article/details/88683090)
+- [很有意思就是我想要的：Qt的QWebChannel和JS、HTML通信/交互驱动百度地图](https://blog.csdn.net/u014281970/article/details/82110446)
+- [使用 Qt WebChannel 实现 C++/QML 和 HTML 页面之间交互: 注：本文中提到的客户端和服务端其实是在同一个应用程序内，因为 WebChannel 是基于 WebSocket 实现的，所以会有这种客户端和服务端的叫法。](https://www.pressc.cn/1085.html)
+- [Best Practices in Qt Quick/QML - Part I](https://www.slideshare.net/ICSinc/best-practices-in-qt-quick-qml-part-1)
+- [10 Keys to Ensuring Success for Your Next Qt Project](https://www.slideshare.net/ICSinc/10-keys-to-ensuring-success-for-your-next-qt-project)
 - ![Gxcel application architecture SAAS](document/gxcel-arch.png)
+
+### Desktop APP 
+- ![Desktop APP architecture](document/10-keys-to-ensuring-success-for-your-next-qt-project-9-638.jpg)
+    - [Data Layer(Local Data Storage): Embedded database in go for desktop: BadgerHold is an embeddable NoSQL store for querying Go types built on Badger](https://github.com/timshannon/badgerhold)
+    - [Communication Layer(TCP): 58到家通用实时消息平台架构细节（Qcon2016）](https://mp.weixin.qq.com/s?__biz=MjM5ODYxMDA5OQ==&mid=2651959410&idx=1&sn=b91b5721ca394d15fb391097eddb752d&scene=21)
+    - [Communication Layer(TCP): The Leader in Open Source IoT Messaging Scalable and Reliable Real-time MQTT Messaging Engine for IoT in 5G Era](https://www.emqx.io/)
+    - [Communication Layer(TCP): Guidance on using emqttd for a chat app](https://github.com/emqx/emqx/issues/634)
 
 ## RPA
 ![Biz table data for any team RPA_Graphics_Infographic_F](document/RPA_Graphics_Infographic_F.png)
