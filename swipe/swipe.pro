@@ -17,6 +17,7 @@ SOURCES += \
         imagemodel.cpp \
         main.cpp \
         sqlconversationmodel.cpp \
+        tablemodel.cpp \
         treeelement.cpp \
         treemodel.cpp
 
@@ -40,5 +41,6 @@ DISTFILES += \
 HEADERS += \
     imagemodel.h \
     sqlconversationmodel.h \
+    tablemodel.h \
     treeelement.h \
     treemodel.h
