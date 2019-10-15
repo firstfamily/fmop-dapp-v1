@@ -283,7 +283,7 @@ ApplicationWindow {
                 orientation: Qt.Vertical
                 Column {
                     SplitView.fillWidth: true
-                    SplitView.fillHeight: true
+                    SplitView.minimumHeight:  400
                     width: 800
                     TextField {
                         id: searchBox
@@ -315,15 +315,12 @@ ApplicationWindow {
                     //! [tableview]
 
                 }
-                Rectangle {
-                    SplitView.minimumHeight:  200
+
+                Page5Table {
                     SplitView.fillWidth: true
-                    color: "lightgray"
-                    Label {
-                        text: "View 2.2"
-                        anchors.centerIn: parent
-                    }
+                    SplitView.fillHeight: true
                 }
+
             }
             Column {
                 SplitView.minimumWidth: 300

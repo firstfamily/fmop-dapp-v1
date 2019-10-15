@@ -1,4 +1,5 @@
 #include "imagemodel.h"
+#include "tablemodel.h"
 #include "treemodel.h"
 #include "treeelement.h"
 #include "sqlconversationmodel.h"
@@ -63,6 +64,10 @@ int main(int argc, char *argv[])
     connectToDatabase();
 
     QQmlApplicationEngine engine;
+
+    TableModel model;
+    engine.rootContext()->setContextProperty("table_model", &model);
+
     const QUrl url(QStringLiteral("qrc:/main.qml"));
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
                      &app, [url](QObject *obj, const QUrl &objUrl) {

@@ -8,5 +8,6 @@ Page {
 
     ConversationPage{
         anchors.fill: parent
+        inConversationWith: "Hans Gude"
     }
 }

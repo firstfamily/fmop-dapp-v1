@@ -224,7 +224,7 @@ ApplicationWindow {
         }
         Page4Form {
         }
-        Page5Form {
+        Page5Table {
         }
         Page6Form {
         }
