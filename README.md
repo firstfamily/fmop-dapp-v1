@@ -87,6 +87,10 @@ The choice of Golang comes from the fact that it has the same tooling on every p
     - [Communication Layer(TCP): 58到家通用实时消息平台架构细节（Qcon2016）](https://mp.weixin.qq.com/s?__biz=MjM5ODYxMDA5OQ==&mid=2651959410&idx=1&sn=b91b5721ca394d15fb391097eddb752d&scene=21)
     - [Communication Layer(TCP): The Leader in Open Source IoT Messaging Scalable and Reliable Real-time MQTT Messaging Engine for IoT in 5G Era](https://www.emqx.io/)
     - [Communication Layer(TCP): Guidance on using emqttd for a chat app](https://github.com/emqx/emqx/issues/634)
+    - [https://stackoverflow.com/questions/2710224/trying-to-make-a-plugin-system-in-c-qt](Trying to make a plugin system in C++/Qt)
+    - [Creating C++ Plugins for QML](https://doc.qt.io/qt-5/qtqml-modules-cppplugins.html)
+    - [How to Create Qt Plugins:The Low-Level API: Extending Qt Applications. Not only Qt itself but also Qt application can be extended through plugins. This requires the application to detect and load plugins using QPluginLoader. There are two kinds of plugins in Qt: plugins that extend Qt itself and plugins that extend applications written in Qt. ](https://doc.qt.io/qt-5/plugins-howto.html)
+    - [Golang package for editing struct's fields during runtime and mapping structs to other structs.](https://github.com/Ompluscator/dynamic-struct)
 
 ## RPA
 ![Biz table data for any team RPA_Graphics_Infographic_F](document/RPA_Graphics_Infographic_F.png)
