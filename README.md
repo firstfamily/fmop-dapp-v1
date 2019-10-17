@@ -1,6 +1,17 @@
-# Biz table data for any team FMSOP Dapp v1
+# Biz table data for any team FMSOP Dapp v1 
 ![Biz table data for any team FMSOP Dapp v1](document/taskman/fmsop_dapp_v1.png)
+- Team Collaboration
+- Customer Relationship Mangement
+- Pre/After Sales Services 
 
+## 组成
+- 微信小程序 for customer or employee
+    - 顾客咨询
+    - 员工回答
+- 桌面应用 for employee
+- 中台AI
+    - 智能回答顾客问题
+    
 
 ## 技术栈
 
