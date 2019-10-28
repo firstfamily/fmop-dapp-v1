@@ -71,12 +71,27 @@ The choice of Golang comes from the fact that it has the same tooling on every p
 - [qml TableView 表格编辑器](https://github.com/jaredtao/TableEdit)
 - [Qml组件化编程](https://jaredtao.github.io/)
 - [Best_Practices_in_Qt_Quick](http://cdn2.hubspot.net/hubfs/149513/Roadshow_US/Best_Practices_in_Qt_Quick.pdf)
+- [we'll look at the details of therecipe/qt, the most widely adopted Qt binding for the Go language.](https://subscription.packtpub.com/book/application_development/9781789138412/7)
+- [本例QML实现动态表头、添加数据，自定义样式，修改行高，在c++中动态添加数据等。](https://blog.csdn.net/chyuanrufeng/article/details/79902128)
+- [在qml应用开发中，经常会用到TableView来显示数据，而有时表格又不是固定的，需要根据不同的情况来变换表格的标题和内容。](https://blog.csdn.net/wanghualin033/article/details/78173491)
+- [Qt Model/View（模型/视图）结构:由于数据源与显示界面通过 Model/View 结构分离开来，因此可以将一个数据模型在不同的视图中显示，也可以在不修改数据模型的情况下，设计特殊的视图组件。在 Model/View 结构中，还提供了代理（Delegate）功能，代理功能可以让用户定制数据的界面显示和编辑方式。在标准的视图组件中，代理功能显示一个数据，当数据被编辑时，代理通过模型索引与数据模型通信，并为编辑数据提供一个编辑器，一般是一个 QLineEdit 组件。模型、视图和代理之间使用信号和槽通信。当源数据发生变化时，数据模型发射信号通知视图组件；当用户在界面上操作数据时，视图组件发射信号表示这些操作信息；当编辑数据时，代理发射信号告知数据模型和视图组件编辑器的状态。](http://c.biancheng.net/view/1864.html)
+- [How to make qml TableView row height dynamically adapt to content](https://stackoverflow.com/questions/53082370/how-to-make-qml-tableview-row-height-dynamically-adapt-to-content)
+- [嵌入式APP UI 选型：a head-to-head comparison of the same application running on Qt and JavaFX. Both systems are using Raspberry Pi 3. ](https://www.youtube.com/watch?v=Kh6K-yEp_JY)
+- [嵌入式APP UI 选型：](https://www.youtube.com/watch?v=Z4CwVN9RRbE)
+- [Basics of Model/View Qt programming](https://www.slideshare.net/ICSinc/basics-of-modelview-qt-programming)
 
 - [58到家通用实时消息平台架构细节（Qcon2016）](https://mp.weixin.qq.com/s?__biz=MjM5ODYxMDA5OQ==&mid=2651959410&idx=1&sn=b91b5721ca394d15fb391097eddb752d&scene=21)
 - [The Leader in Open Source IoT Messaging Scalable and Reliable Real-time MQTT Messaging Engine for IoT in 5G Era](https://www.emqx.io/)
 - [Guidance on using emqttd for a chat app](https://github.com/emqx/emqx/issues/634)
 
 - ![Gxcel application architecture SAAS](document/gxcel-arch.png)
+
+- [5 Advanced Go Testing Techniques](https://hackernoon.com/5-advanced-go-testing-techniques-7199b686b6c1)
+- [Write behavioral tests in your editor. Get live results in your browser.](http://goconvey.co/)
+- [BDD Testing Framework for Go](https://github.com/onsi/ginkgo)
+- [如何基于Docker和Jenkins打造⾯向初创公司的持续集成体系](https://zhuanlan.zhihu.com/p/20708954)
+- [Exploring the landscape of Go testing frameworks](https://bmuschko.com/blog/go-testing-frameworks/)
+- [Creating an opinionated GraphQL server with Go](https://dev.to/cmelgarejo/creating-an-opinionated-graphql-server-with-go-part-3-3aoi)
 
 ## RPA
 ![Biz table data for any team RPA_Graphics_Infographic_F](document/RPA_Graphics_Infographic_F.png)
