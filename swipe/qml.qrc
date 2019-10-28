@@ -5,7 +5,6 @@
         <file>FolderTreeView.qml</file>
         <file>Page3Form.ui.qml</file>
         <file>Page4Form.ui.qml</file>
-        <file>Page5Form.ui.qml</file>
         <file>Page6Form.ui.qml</file>
         <file>Page7Form.ui.qml</file>
         <file>Page8Form.ui.qml</file>
@@ -47,5 +46,13 @@
         <file>common/SwitchWithLeftLabel.qml</file>
         <file>common/VerticalDivider.qml</file>
         <file>PageB.qml</file>
+        <file>AppWinIdx.qml</file>
+        <file>AppWinFull.qml</file>
+        <file>common/Constants.qml</file>
+        <file>fonts/fontello.ttf</file>
+        <file>AppWinChats.qml</file>
+        <file>ConversationPage.qml</file>
+        <file>ChatToolBar.qml</file>
+        <file>Page5Table.qml</file>
     </qresource>
 </RCC>

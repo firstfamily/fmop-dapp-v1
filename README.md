@@ -1,6 +1,17 @@
-# Biz table data for any team FMSOP Dapp v1
+# Biz table data for any team FMSOP Dapp v1 
 ![Biz table data for any team FMSOP Dapp v1](document/taskman/fmsop_dapp_v1.png)
+- Team Collaboration
+- Customer Relationship Mangement
+- Pre/After Sales Services 
 
+## 组成
+- 微信小程序 for customer or employee
+    - 顾客咨询
+    - 员工回答
+- 桌面应用 for employee
+- 中台AI
+    - 智能回答顾客问题
+    
 
 ## 技术栈
 
@@ -80,18 +91,34 @@ The choice of Golang comes from the fact that it has the same tooling on every p
 - [嵌入式APP UI 选型：](https://www.youtube.com/watch?v=Z4CwVN9RRbE)
 - [Basics of Model/View Qt programming](https://www.slideshare.net/ICSinc/basics-of-modelview-qt-programming)
 
-- [58到家通用实时消息平台架构细节（Qcon2016）](https://mp.weixin.qq.com/s?__biz=MjM5ODYxMDA5OQ==&mid=2651959410&idx=1&sn=b91b5721ca394d15fb391097eddb752d&scene=21)
-- [The Leader in Open Source IoT Messaging Scalable and Reliable Real-time MQTT Messaging Engine for IoT in 5G Era](https://www.emqx.io/)
-- [Guidance on using emqttd for a chat app](https://github.com/emqx/emqx/issues/634)
-
+- [通过WebChannel/WebSockets与QML中的HTML交互](https://www.cnblogs.com/suRimn/p/10238720.html)
+- [基于 QWebChannel 的前端通信方案:本文将结合自身在开发中的一些经历，将从前端的角度探讨 QWebChannel 在 client 端实例化的本质，以及如何将 QWebChannel 集成到 Vue.js 等类似前端框架中。](https://juejin.im/post/5d46b1966fb9a06afe127b15)
+- [最清晰Qt与JS通过qwebchannel交互例子](https://blog.csdn.net/sunnyloves/article/details/88683090)
+- [很有意思就是我想要的：Qt的QWebChannel和JS、HTML通信/交互驱动百度地图](https://blog.csdn.net/u014281970/article/details/82110446)
+- [使用 Qt WebChannel 实现 C++/QML 和 HTML 页面之间交互: 注：本文中提到的客户端和服务端其实是在同一个应用程序内，因为 WebChannel 是基于 WebSocket 实现的，所以会有这种客户端和服务端的叫法。](https://www.pressc.cn/1085.html)
+- [Best Practices in Qt Quick/QML - Part I](https://www.slideshare.net/ICSinc/best-practices-in-qt-quick-qml-part-1)
+- [10 Keys to Ensuring Success for Your Next Qt Project](https://www.slideshare.net/ICSinc/10-keys-to-ensuring-success-for-your-next-qt-project)
 - ![Gxcel application architecture SAAS](document/gxcel-arch.png)
 
+<<<<<<< HEAD
 - [5 Advanced Go Testing Techniques](https://hackernoon.com/5-advanced-go-testing-techniques-7199b686b6c1)
 - [Write behavioral tests in your editor. Get live results in your browser.](http://goconvey.co/)
 - [BDD Testing Framework for Go](https://github.com/onsi/ginkgo)
 - [如何基于Docker和Jenkins打造⾯向初创公司的持续集成体系](https://zhuanlan.zhihu.com/p/20708954)
 - [Exploring the landscape of Go testing frameworks](https://bmuschko.com/blog/go-testing-frameworks/)
 - [Creating an opinionated GraphQL server with Go](https://dev.to/cmelgarejo/creating-an-opinionated-graphql-server-with-go-part-3-3aoi)
+=======
+### Desktop APP 
+- ![Desktop APP architecture](document/10-keys-to-ensuring-success-for-your-next-qt-project-9-638.jpg)
+    - [Data Layer(Local Data Storage): Embedded database in go for desktop: BadgerHold is an embeddable NoSQL store for querying Go types built on Badger](https://github.com/timshannon/badgerhold)
+    - [Communication Layer(TCP): 58到家通用实时消息平台架构细节（Qcon2016）](https://mp.weixin.qq.com/s?__biz=MjM5ODYxMDA5OQ==&mid=2651959410&idx=1&sn=b91b5721ca394d15fb391097eddb752d&scene=21)
+    - [Communication Layer(TCP): The Leader in Open Source IoT Messaging Scalable and Reliable Real-time MQTT Messaging Engine for IoT in 5G Era](https://www.emqx.io/)
+    - [Communication Layer(TCP): Guidance on using emqttd for a chat app](https://github.com/emqx/emqx/issues/634)
+    - [https://stackoverflow.com/questions/2710224/trying-to-make-a-plugin-system-in-c-qt](Trying to make a plugin system in C++/Qt)
+    - [Creating C++ Plugins for QML](https://doc.qt.io/qt-5/qtqml-modules-cppplugins.html)
+    - [How to Create Qt Plugins:The Low-Level API: Extending Qt Applications. Not only Qt itself but also Qt application can be extended through plugins. This requires the application to detect and load plugins using QPluginLoader. There are two kinds of plugins in Qt: plugins that extend Qt itself and plugins that extend applications written in Qt. ](https://doc.qt.io/qt-5/plugins-howto.html)
+    - [Golang package for editing struct's fields during runtime and mapping structs to other structs.](https://github.com/Ompluscator/dynamic-struct)
+>>>>>>> c1fb93297d077f5d820489346102a62894cbce13
 
 ## RPA
 ![Biz table data for any team RPA_Graphics_Infographic_F](document/RPA_Graphics_Infographic_F.png)
