@@ -100,14 +100,13 @@ The choice of Golang comes from the fact that it has the same tooling on every p
 - [10 Keys to Ensuring Success for Your Next Qt Project](https://www.slideshare.net/ICSinc/10-keys-to-ensuring-success-for-your-next-qt-project)
 - ![Gxcel application architecture SAAS](document/gxcel-arch.png)
 
-<<<<<<< HEAD
 - [5 Advanced Go Testing Techniques](https://hackernoon.com/5-advanced-go-testing-techniques-7199b686b6c1)
 - [Write behavioral tests in your editor. Get live results in your browser.](http://goconvey.co/)
 - [BDD Testing Framework for Go](https://github.com/onsi/ginkgo)
 - [如何基于Docker和Jenkins打造⾯向初创公司的持续集成体系](https://zhuanlan.zhihu.com/p/20708954)
 - [Exploring the landscape of Go testing frameworks](https://bmuschko.com/blog/go-testing-frameworks/)
 - [Creating an opinionated GraphQL server with Go](https://dev.to/cmelgarejo/creating-an-opinionated-graphql-server-with-go-part-3-3aoi)
-=======
+
 ### Desktop APP 
 - ![Desktop APP architecture](document/10-keys-to-ensuring-success-for-your-next-qt-project-9-638.jpg)
     - [Data Layer(Local Data Storage): Embedded database in go for desktop: BadgerHold is an embeddable NoSQL store for querying Go types built on Badger](https://github.com/timshannon/badgerhold)
@@ -118,7 +117,6 @@ The choice of Golang comes from the fact that it has the same tooling on every p
     - [Creating C++ Plugins for QML](https://doc.qt.io/qt-5/qtqml-modules-cppplugins.html)
     - [How to Create Qt Plugins:The Low-Level API: Extending Qt Applications. Not only Qt itself but also Qt application can be extended through plugins. This requires the application to detect and load plugins using QPluginLoader. There are two kinds of plugins in Qt: plugins that extend Qt itself and plugins that extend applications written in Qt. ](https://doc.qt.io/qt-5/plugins-howto.html)
     - [Golang package for editing struct's fields during runtime and mapping structs to other structs.](https://github.com/Ompluscator/dynamic-struct)
->>>>>>> c1fb93297d077f5d820489346102a62894cbce13
 
 ## RPA
 ![Biz table data for any team RPA_Graphics_Infographic_F](document/RPA_Graphics_Infographic_F.png)
