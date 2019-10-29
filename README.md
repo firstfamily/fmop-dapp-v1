@@ -17,8 +17,7 @@
 
 The choice of Golang comes from the fact that it has the same tooling on every platform. Plus Golang is a great language because it keeps everything simple and readable, which makes it easy to build cross-platform plugins.
 
-**[Wails applications consist of 2 parts: 1️⃣ A backend written in Go 2️⃣ A frontend written using standard HTML/JS/CSS](https://wails.app/quick_start.html)**
-- [用户界面：Building a Desktop App in Go using Wails](https://medium.com/js-dojo/building-a-desktop-app-in-go-using-wails-b7f5825f986a)
+
 - [用户界面：Build a Vue chat app](https://medium.com/js-dojo/build-a-vue-chat-app-1822e7d70a5e)
 - [用户界面：![made with vue.js](document/taskman/clibd-io.jpg )](https://madewithvuejs.com/clipdio?ref=vuetifyjs.com)
 - [用户界面：Package systray is a cross platfrom Go library to place an icon and menu in the notification area. Tested on Windows 8, Mac OSX, Ubuntu 14.10 and Debian 7.6.](https://github.com/getlantern/systray)
@@ -59,8 +58,14 @@ The choice of Golang comes from the fact that it has the same tooling on every p
 # FMOP Manager Dapp v1
 ![Biz table data for any team FMSOP Dapp v1](document/gxcel-manager-dapp.png)
 
+
 ## 技术栈
+- [基于 Qt 桌面端混合应用的开发--基于 QWebChannel 的前端通信方案:本文将结合自身在开发中的一些经历，将从前端的角度探讨 QWebChannel 在 client 端实例化的本质，以及如何将 QWebChannel 集成到 Vue.js 等类似前端框架中。后文将介绍没有 WebSocket 如何实现 Qt 端和 client 端异步通信。QWebChannel *channel = new QWebChannel(this);](https://juejin.im/post/5d46b1966fb9a06afe127b15)
+- [【golang-GUI开发】qt之signal和slot（一）](https://www.cnblogs.com/apocelipes/p/9315166.html)
+- [Go struct tags with underscore before function names](https://stackoverflow.com/questions/50387103/go-struct-tags-with-underscore-before-function-names)
 - [用户界面：Qt与HTML/JavaScript网页端通信和调用 new QWebChannel(socket, function(channel)](https://github.com/therecipe/qt/blob/5355937d17e9eee62460706cb9a033180014400e/internal/examples/webchannel/webview/index.html)
+- [使用 Qt WebChannel 实现 C++/QML 和 HTML 页面之间交互](https://www.pressc.cn/1085.html)
+- [Vue.js 基于 QWebChannel 的前端通信方案](https://juejin.im/post/5d46b1966fb9a06afe127b15)
 - [用户界面：Qt binding for Go (Golang) with support for Windows / macOS / Linux / FreeBSD / Android / iOS / Sailfish OS / Raspberry Pi / AsteroidOS / Ubuntu Touch / JavaScript / WebAssembly](https://github.com/therecipe/qt/wiki/Gallery)
 
 - [用户界面：State of GUI App Development with Go in 2018: When possible, use therecipe/qt + QtQuick. Except for the license, I don’t think there are any reason to not use it. This is what I ended up using for the company’s app. If you have no time, chased by deadline, and don’t have any time to test other tools, use Electron. However, do note that Electron is really heavy on resources, so I’m only using this as the last or temporary choice. For the company’s app, I’ve used Electron for the first three months, then I replace it with Qt. Sciter is interesting because it’s faster and lighter than the other, not to mention it has permissive license unlike Qt and therecipe/qt. However, because I was busy and the docs are not really good, I haven’t use it very much and only tested the demos. If you’ve got the time to learn, experiment, digging information and asking in forum, you should try it. I can’t recommend webview because sometimes it’s failed to render my view correctly.](https://www.douban.com/note/690095809/)
@@ -91,8 +96,10 @@ The choice of Golang comes from the fact that it has the same tooling on every p
 - [嵌入式APP UI 选型：](https://www.youtube.com/watch?v=Z4CwVN9RRbE)
 - [Basics of Model/View Qt programming](https://www.slideshare.net/ICSinc/basics-of-modelview-qt-programming)
 
+- [When in use with QWebEngine, one should not use the websockets, but prefer the much faster IPC solution. There was a visible startup time with the web editor when it also needed to connect via websockets. 与QWebEngine一起使用时，不应使用websocket，而应使用速度更快的IPC解决方案。 当Web编辑器也需要通过websockets连接时，有一个可见的启动时间。您需要将qwebchannel.js加载到QWebEngine的环境中才能使用它，并公开qt.webChannelTransport，这是JS中QWebEngine的IPC端点。](https://meetingcpp.com/blog/items/refactoring-the-html-text-editor-for-qwebengine.html)
+- [qwebengine有专门的ipc，没必要走ws](https://zhuanlan.zhihu.com/p/53564979)
+- [使用IPC:QT5.7+使用QWebEngine+QWebChannel实现与HTML/JS双向通信,Qt开发团队在5.6版本以后已经停止对Webkit的支持，取而代之的是基于chromium内核开发的QWebEngine模块。该模块不但集成了跨平台的API，还可以混合Qt界面或者OpenGL。因此对于需要Web能力的项目，建议在Qt5.7版本以上基于QWebEngine进行开发](https://momo.cool/qt5-7%E4%BD%BF%E7%94%A8qwebengineqwebchannel%E5%AE%9E%E7%8E%B0%E4%B8%8Ehtml-js%E5%8F%8C%E5%90%91%E9%80%9A%E4%BF%A1/)
 - [通过WebChannel/WebSockets与QML中的HTML交互](https://www.cnblogs.com/suRimn/p/10238720.html)
-- [基于 QWebChannel 的前端通信方案:本文将结合自身在开发中的一些经历，将从前端的角度探讨 QWebChannel 在 client 端实例化的本质，以及如何将 QWebChannel 集成到 Vue.js 等类似前端框架中。](https://juejin.im/post/5d46b1966fb9a06afe127b15)
 - [最清晰Qt与JS通过qwebchannel交互例子](https://blog.csdn.net/sunnyloves/article/details/88683090)
 - [很有意思就是我想要的：Qt的QWebChannel和JS、HTML通信/交互驱动百度地图](https://blog.csdn.net/u014281970/article/details/82110446)
 - [使用 Qt WebChannel 实现 C++/QML 和 HTML 页面之间交互: 注：本文中提到的客户端和服务端其实是在同一个应用程序内，因为 WebChannel 是基于 WebSocket 实现的，所以会有这种客户端和服务端的叫法。](https://www.pressc.cn/1085.html)
