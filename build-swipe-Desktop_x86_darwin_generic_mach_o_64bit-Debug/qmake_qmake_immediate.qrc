@@ -1,0 +1,5 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource prefix="/">
+<file alias="qt.png">/Users/conanchen/git/firstfamily/fmop-dapp-v1/swipe/qt.png</file>
+</qresource>
+</RCC>

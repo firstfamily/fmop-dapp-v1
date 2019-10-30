@@ -220,13 +220,13 @@ ApplicationWindow {
 
         FolderTreeView {
         }
-        Page3Form {
+        MessageChat {
         }
         Page4Form {
         }
         Page5Table {
         }
-        Page6Form {
+        Html2IPC {
         }
         Page7Form {
         }

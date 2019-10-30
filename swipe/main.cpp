@@ -3,6 +3,7 @@
 #include "treemodel.h"
 #include "treeelement.h"
 #include "sqlconversationmodel.h"
+#include "sage.h"
 
 #include <QFontDatabase>
 #include <QDebug>
@@ -11,12 +12,15 @@
 #include <QSqlDatabase>
 #include <QSqlError>
 #include <QtQml>
+#include <QtWebEngine/QtWebEngine>
+
 
 static void registertypes(){
     qmlRegisterType<TreeElement>("foo", 1, 0, "TreeElement");
     qmlRegisterType<TreeModel>("foo", 1, 0, "TreeModel");
     qmlRegisterType<SqlConversationModel>("foo", 1, 0, "SqlConversationModel");
     qmlRegisterType<ImageModel>("ImageModel", 1, 0, "ImageModel");
+    qmlRegisterType<Sage>("WisdomClub", 1, 0, "Sage");
 }
 
 Q_COREAPP_STARTUP_FUNCTION(registertypes)
@@ -52,6 +56,9 @@ int main(int argc, char *argv[])
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 
     QGuiApplication app(argc, argv);
+
+
+    QtWebEngine::initialize();
 
     QFontDatabase fontDatabase;
     if (fontDatabase.addApplicationFont(":/fonts/fontello.ttf") == -1)

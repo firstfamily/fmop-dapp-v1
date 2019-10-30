@@ -3,9 +3,9 @@
         <file>main.qml</file>
         <file>Messages.qml</file>
         <file>FolderTreeView.qml</file>
-        <file>Page3Form.ui.qml</file>
+        <file>MessageChat.qml</file>
         <file>Page4Form.ui.qml</file>
-        <file>Page6Form.ui.qml</file>
+        <file>Html2IPC.qml</file>
         <file>Page7Form.ui.qml</file>
         <file>Page8Form.ui.qml</file>
         <file>Page9Form.ui.qml</file>
@@ -54,5 +54,6 @@
         <file>ConversationPage.qml</file>
         <file>ChatToolBar.qml</file>
         <file>Page5Table.qml</file>
+        <file>Html2IPC.html</file>
     </qresource>
 </RCC>

@@ -60,6 +60,13 @@ The choice of Golang comes from the fact that it has the same tooling on every p
 
 
 ## 技术栈
+- [看看其中的MVVM分解：Developing cross-platform application with rich GUI using QtWebEngine](https://www.youtube.com/watch?v=fzgx10YcExg)
+- [QT WebEngineView ≠ WebView. The crucial difference between WebEngineView and WebView in terms of this article is the way of how Qt can communicate with HTML-content inside those views. WebEngineView provides the easiest way - directly via WebChannel, thanks to Chromium IPC capabilities. Luckily, I found this repository, which I used as a base.](https://retifrav.github.io/blog/2018/07/14/html-from-qml-over-webchannel-websockets/)
+- [Qt嵌入浏览器（二）——QWebChannel实现与页面的通信](https://www.jianshu.com/p/e25646ee2977)
+- [实现QObject与JavaScript通讯(基于QWebEngine + QWebChannel)](https://www.cnblogs.com/sz-leez/p/6698936.html)
+- [Qt开发北斗定位系统融合百度地图API及Qt程序打包发布](https://www.cnblogs.com/sigma0/p/7220334.html)
+- [Qt与HTML/JavaScript网页端通信和调用,代码参考自QtCreator自带的markdown例子](https://www.twblogs.net/a/5b8a51662b71775d1ce667c4) 
+- [Qt与HTML/JavaScript网页端通信和调用,代码参考自QtCreator自带的markdown例子](https://doc.qt.io/qt-5/qtwebengine-webenginewidgets-markdowneditor-example.html)
 - [基于 Qt 桌面端混合应用的开发--基于 QWebChannel 的前端通信方案:本文将结合自身在开发中的一些经历，将从前端的角度探讨 QWebChannel 在 client 端实例化的本质，以及如何将 QWebChannel 集成到 Vue.js 等类似前端框架中。后文将介绍没有 WebSocket 如何实现 Qt 端和 client 端异步通信。QWebChannel *channel = new QWebChannel(this);](https://juejin.im/post/5d46b1966fb9a06afe127b15)
 - [【golang-GUI开发】qt之signal和slot（一）](https://www.cnblogs.com/apocelipes/p/9315166.html)
 - [Go struct tags with underscore before function names](https://stackoverflow.com/questions/50387103/go-struct-tags-with-underscore-before-function-names)
@@ -67,6 +74,7 @@ The choice of Golang comes from the fact that it has the same tooling on every p
 - [使用 Qt WebChannel 实现 C++/QML 和 HTML 页面之间交互](https://www.pressc.cn/1085.html)
 - [Vue.js 基于 QWebChannel 的前端通信方案](https://juejin.im/post/5d46b1966fb9a06afe127b15)
 - [用户界面：Qt binding for Go (Golang) with support for Windows / macOS / Linux / FreeBSD / Android / iOS / Sailfish OS / Raspberry Pi / AsteroidOS / Ubuntu Touch / JavaScript / WebAssembly](https://github.com/therecipe/qt/wiki/Gallery)
+- [有编程经验的人应该很容易看出来这其中的意思， C++中初始化了一个webengine（qt的web引擎组件已经基于chromium了）将ui组件和WebEngineView和WebEngine绑定， 之后创建了一个QWebChannel对象， 并通过WebChannel对象注册了一个名字为content的对象， 并绑定一个MsgHandler的Qobject的对象用来处理和页面的交互；待会的分析就是从WebEnginePage的setWebChannel(QwebChannel*)函数来开始分析， 因为这里是一切的开始；而在js端， 当页面load完成时， 就可以通过获取这个注册的js对象；有了这个对象，配合Qt 的MetaObject 引入的signal 和 slot机制， 来完成页面的消息传递和函数调用；](https://huangong.gitbooks.io/art_as_programer/meet_chromium/qtwebchannel-%E5%AE%9E%E7%8E%B0%E6%9C%BA%E5%88%B6.html)
 
 - [用户界面：State of GUI App Development with Go in 2018: When possible, use therecipe/qt + QtQuick. Except for the license, I don’t think there are any reason to not use it. This is what I ended up using for the company’s app. If you have no time, chased by deadline, and don’t have any time to test other tools, use Electron. However, do note that Electron is really heavy on resources, so I’m only using this as the last or temporary choice. For the company’s app, I’ve used Electron for the first three months, then I replace it with Qt. Sciter is interesting because it’s faster and lighter than the other, not to mention it has permissive license unlike Qt and therecipe/qt. However, because I was busy and the docs are not really good, I haven’t use it very much and only tested the demos. If you’ve got the time to learn, experiment, digging information and asking in forum, you should try it. I can’t recommend webview because sometimes it’s failed to render my view correctly.](https://www.douban.com/note/690095809/)
 - [用户界面：When possible, use therecipe/qt + QtQuick. Qt Quick简介](https://wizardforcel.gitbooks.io/qt-beginning/content/61.html)

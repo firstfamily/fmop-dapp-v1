@@ -1,4 +1,4 @@
-QT += qml quick sql
+QT += qml quick sql webengine webchannel
 
 CONFIG += c++11
 
@@ -16,6 +16,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         imagemodel.cpp \
         main.cpp \
+        sage.cpp \
         sqlconversationmodel.cpp \
         tablemodel.cpp \
         treeelement.cpp \
@@ -35,11 +36,11 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 DISTFILES += \
-    PageB.qml \
     qt.png
 
 HEADERS += \
     imagemodel.h \
+    sage.h \
     sqlconversationmodel.h \
     tablemodel.h \
     treeelement.h \
