@@ -1,6 +1,5 @@
 #include "mainmodel.h"
 
-MainModel::MainModel()
+MainModel::MainModel(QObject *parent) : QObject(parent)
 {
-
 }
