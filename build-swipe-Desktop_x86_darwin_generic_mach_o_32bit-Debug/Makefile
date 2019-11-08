@@ -54,8 +54,6 @@ OBJECTS_DIR   = ./
 
 SOURCES       = ../swipe/imagemodel.cpp \
 		../swipe/main.cpp \
-		../swipe/mainmodel.cpp \
-		../swipe/mainviewmodel.cpp \
 		../swipe/sage.cpp \
 		../swipe/sqlconversationmodel.cpp \
 		../swipe/tablemodel.cpp \
@@ -63,8 +61,6 @@ SOURCES       = ../swipe/imagemodel.cpp \
 		../swipe/treemodel.cpp qrc_qml.cpp \
 		qrc_qmake_qmake_immediate.cpp \
 		moc_imagemodel.cpp \
-		moc_mainmodel.cpp \
-		moc_mainviewmodel.cpp \
 		moc_sage.cpp \
 		moc_sqlconversationmodel.cpp \
 		moc_tablemodel.cpp \
@@ -72,8 +68,6 @@ SOURCES       = ../swipe/imagemodel.cpp \
 		moc_treemodel.cpp
 OBJECTS       = imagemodel.o \
 		main.o \
-		mainmodel.o \
-		mainviewmodel.o \
 		sage.o \
 		sqlconversationmodel.o \
 		tablemodel.o \
@@ -82,8 +76,6 @@ OBJECTS       = imagemodel.o \
 		qrc_qml.o \
 		qrc_qmake_qmake_immediate.o \
 		moc_imagemodel.o \
-		moc_mainmodel.o \
-		moc_mainviewmodel.o \
 		moc_sage.o \
 		moc_sqlconversationmodel.o \
 		moc_tablemodel.o \
@@ -245,6 +237,7 @@ DIST          = ../swipe/qt.png \
 		../../../../Qt5131/5.13.1/clang_64/mkspecs/features/qt_config.prf \
 		../../../../Qt5131/5.13.1/clang_64/mkspecs/macx-clang/qmake.conf \
 		../../../../Qt5131/5.13.1/clang_64/mkspecs/features/spec_post.prf \
+		../swipe/.qmake.stash \
 		../../../../Qt5131/5.13.1/clang_64/mkspecs/features/exclusive_builds.prf \
 		../../../../Qt5131/5.13.1/clang_64/mkspecs/features/mac/sdk.prf \
 		../../../../Qt5131/5.13.1/clang_64/mkspecs/features/toolchain.prf \
@@ -272,16 +265,12 @@ DIST          = ../swipe/qt.png \
 		../../../../Qt5131/5.13.1/clang_64/mkspecs/features/yacc.prf \
 		../../../../Qt5131/5.13.1/clang_64/mkspecs/features/lex.prf \
 		../swipe/swipe.pro ../swipe/imagemodel.h \
-		../swipe/mainmodel.h \
-		../swipe/mainviewmodel.h \
 		../swipe/sage.h \
 		../swipe/sqlconversationmodel.h \
 		../swipe/tablemodel.h \
 		../swipe/treeelement.h \
 		../swipe/treemodel.h ../swipe/imagemodel.cpp \
 		../swipe/main.cpp \
-		../swipe/mainmodel.cpp \
-		../swipe/mainviewmodel.cpp \
 		../swipe/sage.cpp \
 		../swipe/sqlconversationmodel.cpp \
 		../swipe/tablemodel.cpp \
@@ -464,6 +453,7 @@ Makefile: ../swipe/swipe.pro ../../../../Qt5131/5.13.1/clang_64/mkspecs/macx-cla
 		../../../../Qt5131/5.13.1/clang_64/mkspecs/features/qt_config.prf \
 		../../../../Qt5131/5.13.1/clang_64/mkspecs/macx-clang/qmake.conf \
 		../../../../Qt5131/5.13.1/clang_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../../../Qt5131/5.13.1/clang_64/mkspecs/features/exclusive_builds.prf \
 		../../../../Qt5131/5.13.1/clang_64/mkspecs/features/mac/sdk.prf \
 		../../../../Qt5131/5.13.1/clang_64/mkspecs/features/toolchain.prf \
@@ -659,6 +649,7 @@ Makefile: ../swipe/swipe.pro ../../../../Qt5131/5.13.1/clang_64/mkspecs/macx-cla
 ../../../../Qt5131/5.13.1/clang_64/mkspecs/features/qt_config.prf:
 ../../../../Qt5131/5.13.1/clang_64/mkspecs/macx-clang/qmake.conf:
 ../../../../Qt5131/5.13.1/clang_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 ../../../../Qt5131/5.13.1/clang_64/mkspecs/features/exclusive_builds.prf:
 ../../../../Qt5131/5.13.1/clang_64/mkspecs/features/mac/sdk.prf:
 ../../../../Qt5131/5.13.1/clang_64/mkspecs/features/toolchain.prf:
@@ -729,8 +720,8 @@ distdir: FORCE
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents ../swipe/qml.qrc qmake_qmake_immediate.qrc $(DISTDIR)/
 	$(COPY_FILE) --parents ../../../../Qt5131/5.13.1/clang_64/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents ../swipe/imagemodel.h ../swipe/mainmodel.h ../swipe/mainviewmodel.h ../swipe/sage.h ../swipe/sqlconversationmodel.h ../swipe/tablemodel.h ../swipe/treeelement.h ../swipe/treemodel.h $(DISTDIR)/
-	$(COPY_FILE) --parents ../swipe/imagemodel.cpp ../swipe/main.cpp ../swipe/mainmodel.cpp ../swipe/mainviewmodel.cpp ../swipe/sage.cpp ../swipe/sqlconversationmodel.cpp ../swipe/tablemodel.cpp ../swipe/treeelement.cpp ../swipe/treemodel.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../swipe/imagemodel.h ../swipe/sage.h ../swipe/sqlconversationmodel.h ../swipe/tablemodel.h ../swipe/treeelement.h ../swipe/treemodel.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../swipe/imagemodel.cpp ../swipe/main.cpp ../swipe/sage.cpp ../swipe/sqlconversationmodel.cpp ../swipe/tablemodel.cpp ../swipe/treeelement.cpp ../swipe/treemodel.cpp $(DISTDIR)/
 
 
 clean: compiler_clean 
@@ -740,6 +731,7 @@ clean: compiler_clean
 
 distclean: clean 
 	-$(DEL_FILE) -r swipe.app
+	-$(DEL_FILE) .qmake.stash
 	-$(DEL_FILE) Makefile
 
 
@@ -829,9 +821,9 @@ compiler_moc_predefs_clean:
 moc_predefs.h: ../../../../Qt5131/5.13.1/clang_64/mkspecs/features/data/dummy.cpp
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -pipe -stdlib=libc++ -g -std=gnu++11 $(EXPORT_ARCH_ARGS) -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk -mmacosx-version-min=10.12 -Wall -W -dM -E -o moc_predefs.h ../../../../Qt5131/5.13.1/clang_64/mkspecs/features/data/dummy.cpp
 
-compiler_moc_header_make_all: moc_imagemodel.cpp moc_mainmodel.cpp moc_mainviewmodel.cpp moc_sage.cpp moc_sqlconversationmodel.cpp moc_tablemodel.cpp moc_treeelement.cpp moc_treemodel.cpp
+compiler_moc_header_make_all: moc_imagemodel.cpp moc_sage.cpp moc_sqlconversationmodel.cpp moc_tablemodel.cpp moc_treeelement.cpp moc_treemodel.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) moc_imagemodel.cpp moc_mainmodel.cpp moc_mainviewmodel.cpp moc_sage.cpp moc_sqlconversationmodel.cpp moc_tablemodel.cpp moc_treeelement.cpp moc_treemodel.cpp
+	-$(DEL_FILE) moc_imagemodel.cpp moc_sage.cpp moc_sqlconversationmodel.cpp moc_tablemodel.cpp moc_treeelement.cpp moc_treemodel.cpp
 moc_imagemodel.cpp: ../swipe/imagemodel.h \
 		../../../../Qt5131/5.13.1/clang_64/lib/QtCore.framework/Headers/QAbstractTableModel \
 		../../../../Qt5131/5.13.1/clang_64/lib/QtCore.framework/Headers/qabstractitemmodel.h \
@@ -840,21 +832,6 @@ moc_imagemodel.cpp: ../swipe/imagemodel.h \
 		moc_predefs.h \
 		../../../../Qt5131/5.13.1/clang_64/bin/moc
 	/Users/conanchen/Qt5131/5.13.1/clang_64/bin/moc $(DEFINES) --include /Users/conanchen/git/firstfamily/fmop-dapp-v1/build-swipe-Desktop_x86_darwin_generic_mach_o_32bit-Debug/moc_predefs.h -I/Users/conanchen/Qt5131/5.13.1/clang_64/mkspecs/macx-clang -I/Users/conanchen/git/firstfamily/fmop-dapp-v1/swipe -I/Users/conanchen/Qt5131/5.13.1/clang_64/lib/QtWebEngine.framework/Headers -I/Users/conanchen/Qt5131/5.13.1/clang_64/lib/QtWebEngineCore.framework/Headers -I/Users/conanchen/Qt5131/5.13.1/clang_64/lib/QtQuick.framework/Headers -I/Users/conanchen/Qt5131/5.13.1/clang_64/lib/QtGui.framework/Headers -I/Users/conanchen/Qt5131/5.13.1/clang_64/lib/QtWebChannel.framework/Headers -I/Users/conanchen/Qt5131/5.13.1/clang_64/lib/QtQml.framework/Headers -I/Users/conanchen/Qt5131/5.13.1/clang_64/lib/QtNetwork.framework/Headers -I/Users/conanchen/Qt5131/5.13.1/clang_64/lib/QtSql.framework/Headers -I/Users/conanchen/Qt5131/5.13.1/clang_64/lib/QtPositioning.framework/Headers -I/Users/conanchen/Qt5131/5.13.1/clang_64/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include -F/Users/conanchen/Qt5131/5.13.1/clang_64/lib ../swipe/imagemodel.h -o moc_imagemodel.cpp
-
-moc_mainmodel.cpp: ../swipe/mainmodel.h \
-		../../../../Qt5131/5.13.1/clang_64/lib/QtCore.framework/Headers/QObject \
-		../../../../Qt5131/5.13.1/clang_64/lib/QtCore.framework/Headers/qobject.h \
-		moc_predefs.h \
-		../../../../Qt5131/5.13.1/clang_64/bin/moc
-	/Users/conanchen/Qt5131/5.13.1/clang_64/bin/moc $(DEFINES) --include /Users/conanchen/git/firstfamily/fmop-dapp-v1/build-swipe-Desktop_x86_darwin_generic_mach_o_32bit-Debug/moc_predefs.h -I/Users/conanchen/Qt5131/5.13.1/clang_64/mkspecs/macx-clang -I/Users/conanchen/git/firstfamily/fmop-dapp-v1/swipe -I/Users/conanchen/Qt5131/5.13.1/clang_64/lib/QtWebEngine.framework/Headers -I/Users/conanchen/Qt5131/5.13.1/clang_64/lib/QtWebEngineCore.framework/Headers -I/Users/conanchen/Qt5131/5.13.1/clang_64/lib/QtQuick.framework/Headers -I/Users/conanchen/Qt5131/5.13.1/clang_64/lib/QtGui.framework/Headers -I/Users/conanchen/Qt5131/5.13.1/clang_64/lib/QtWebChannel.framework/Headers -I/Users/conanchen/Qt5131/5.13.1/clang_64/lib/QtQml.framework/Headers -I/Users/conanchen/Qt5131/5.13.1/clang_64/lib/QtNetwork.framework/Headers -I/Users/conanchen/Qt5131/5.13.1/clang_64/lib/QtSql.framework/Headers -I/Users/conanchen/Qt5131/5.13.1/clang_64/lib/QtPositioning.framework/Headers -I/Users/conanchen/Qt5131/5.13.1/clang_64/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include -F/Users/conanchen/Qt5131/5.13.1/clang_64/lib ../swipe/mainmodel.h -o moc_mainmodel.cpp
-
-moc_mainviewmodel.cpp: ../swipe/mainviewmodel.h \
-		../swipe/mainmodel.h \
-		../../../../Qt5131/5.13.1/clang_64/lib/QtCore.framework/Headers/QObject \
-		../../../../Qt5131/5.13.1/clang_64/lib/QtCore.framework/Headers/qobject.h \
-		moc_predefs.h \
-		../../../../Qt5131/5.13.1/clang_64/bin/moc
-	/Users/conanchen/Qt5131/5.13.1/clang_64/bin/moc $(DEFINES) --include /Users/conanchen/git/firstfamily/fmop-dapp-v1/build-swipe-Desktop_x86_darwin_generic_mach_o_32bit-Debug/moc_predefs.h -I/Users/conanchen/Qt5131/5.13.1/clang_64/mkspecs/macx-clang -I/Users/conanchen/git/firstfamily/fmop-dapp-v1/swipe -I/Users/conanchen/Qt5131/5.13.1/clang_64/lib/QtWebEngine.framework/Headers -I/Users/conanchen/Qt5131/5.13.1/clang_64/lib/QtWebEngineCore.framework/Headers -I/Users/conanchen/Qt5131/5.13.1/clang_64/lib/QtQuick.framework/Headers -I/Users/conanchen/Qt5131/5.13.1/clang_64/lib/QtGui.framework/Headers -I/Users/conanchen/Qt5131/5.13.1/clang_64/lib/QtWebChannel.framework/Headers -I/Users/conanchen/Qt5131/5.13.1/clang_64/lib/QtQml.framework/Headers -I/Users/conanchen/Qt5131/5.13.1/clang_64/lib/QtNetwork.framework/Headers -I/Users/conanchen/Qt5131/5.13.1/clang_64/lib/QtSql.framework/Headers -I/Users/conanchen/Qt5131/5.13.1/clang_64/lib/QtPositioning.framework/Headers -I/Users/conanchen/Qt5131/5.13.1/clang_64/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include -F/Users/conanchen/Qt5131/5.13.1/clang_64/lib ../swipe/mainviewmodel.h -o moc_mainviewmodel.cpp
 
 moc_sage.cpp: ../swipe/sage.h \
 		../../../../Qt5131/5.13.1/clang_64/lib/QtCore.framework/Headers/QObject \
@@ -976,17 +953,6 @@ main.o: ../swipe/main.cpp ../swipe/imagemodel.h \
 		../../../../Qt5131/5.13.1/clang_64/lib/QtQml.framework/Headers/qtqmlversion.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../swipe/main.cpp
 
-mainmodel.o: ../swipe/mainmodel.cpp ../swipe/mainmodel.h \
-		../../../../Qt5131/5.13.1/clang_64/lib/QtCore.framework/Headers/QObject \
-		../../../../Qt5131/5.13.1/clang_64/lib/QtCore.framework/Headers/qobject.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainmodel.o ../swipe/mainmodel.cpp
-
-mainviewmodel.o: ../swipe/mainviewmodel.cpp ../swipe/mainviewmodel.h \
-		../swipe/mainmodel.h \
-		../../../../Qt5131/5.13.1/clang_64/lib/QtCore.framework/Headers/QObject \
-		../../../../Qt5131/5.13.1/clang_64/lib/QtCore.framework/Headers/qobject.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainviewmodel.o ../swipe/mainviewmodel.cpp
-
 sage.o: ../swipe/sage.cpp ../swipe/sage.h \
 		../../../../Qt5131/5.13.1/clang_64/lib/QtCore.framework/Headers/QObject \
 		../../../../Qt5131/5.13.1/clang_64/lib/QtCore.framework/Headers/qobject.h
@@ -1037,12 +1003,6 @@ qrc_qmake_qmake_immediate.o: qrc_qmake_qmake_immediate.cpp
 
 moc_imagemodel.o: moc_imagemodel.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_imagemodel.o moc_imagemodel.cpp
-
-moc_mainmodel.o: moc_mainmodel.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_mainmodel.o moc_mainmodel.cpp
-
-moc_mainviewmodel.o: moc_mainviewmodel.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_mainviewmodel.o moc_mainviewmodel.cpp
 
 moc_sage.o: moc_sage.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_sage.o moc_sage.cpp

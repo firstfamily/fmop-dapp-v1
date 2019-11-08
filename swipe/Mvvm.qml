@@ -22,26 +22,26 @@ Page {
                 id: nameTextArea
                 anchors.horizontalCenter: parent.horizontalCenter
                 placeholderText: qsTr("username")
-                text: mainViewModel.name
-                onTextChanged: mainViewModel.name = text
+               // text: mainViewModel.name
+               // onTextChanged: mainViewModel.name = text
             }
             TextArea {
                 id: passwordTextArea
                 anchors.horizontalCenter: parent.horizontalCenter
                 placeholderText: qsTr("password")
-                text: mainViewModel.password
-                onTextChanged: mainViewModel.password = text
+               // text: mainViewModel.password
+               // onTextChanged: mainViewModel.password = text
             }
             Button {
                 text: "Login"
                 anchors.right: parent.right
                 anchors.rightMargin: 5
-                onClicked: mainViewModel.loginButtonClicked()
+               // onClicked: mainViewModel.loginButtonClicked()
             }
             Text {
                 id:stateText
                 anchors.horizontalCenter: parent.horizontalCenter
-                text: mainViewModel.state
+               // text: mainViewModel.state
             }
         }
 }
