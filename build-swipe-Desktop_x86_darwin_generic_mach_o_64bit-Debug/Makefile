@@ -768,7 +768,7 @@ qrc_qml.cpp: ../swipe/qml.qrc \
 		../swipe/AppWinChats.qml \
 		../swipe/ConversationPage.qml \
 		../swipe/PetsModel.qml \
-		../swipe/Page7Form.ui.qml \
+		../swipe/Mvvm.qml \
 		../swipe/main.qml \
 		../swipe/Page8Form.ui.qml \
 		../swipe/AppWinIdx.qml \

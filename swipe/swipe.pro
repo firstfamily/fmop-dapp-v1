@@ -16,6 +16,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         imagemodel.cpp \
         main.cpp \
+        mainmodel.cpp \
+        mainviewmodel.cpp \
         sage.cpp \
         sqlconversationmodel.cpp \
         tablemodel.cpp \
@@ -40,6 +42,8 @@ DISTFILES += \
 
 HEADERS += \
     imagemodel.h \
+    mainmodel.h \
+    mainviewmodel.h \
     sage.h \
     sqlconversationmodel.h \
     tablemodel.h \

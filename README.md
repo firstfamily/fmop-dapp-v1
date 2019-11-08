@@ -9,6 +9,11 @@
     - 顾客咨询
     - 员工回答
 - 桌面应用 for employee
+    - IM based on matrix.org
+    - IM message to task
+    - task management
+    - plugin (biz module)
+    - qt/c++,h5混合桌面应用
 - 中台AI
     - 智能回答顾客问题
     
@@ -60,6 +65,7 @@ The choice of Golang comes from the fact that it has the same tooling on every p
 
 
 ## 技术栈
+- [Release 2.18.2: Guide for MVC, MVVM, Flux with QML](https://felgo.com/updates/release-2-18-2-guide-for-mvc-mvvm-flux-with-qml)
 - [看看其中的MVVM分解：Developing cross-platform application with rich GUI using QtWebEngine](https://www.youtube.com/watch?v=fzgx10YcExg)
 - [QT WebEngineView ≠ WebView. The crucial difference between WebEngineView and WebView in terms of this article is the way of how Qt can communicate with HTML-content inside those views. WebEngineView provides the easiest way - directly via WebChannel, thanks to Chromium IPC capabilities. Luckily, I found this repository, which I used as a base.](https://retifrav.github.io/blog/2018/07/14/html-from-qml-over-webchannel-websockets/)
 - [Qt嵌入浏览器（二）——QWebChannel实现与页面的通信](https://www.jianshu.com/p/e25646ee2977)
@@ -82,6 +88,8 @@ The choice of Golang comes from the fact that it has the same tooling on every p
 - [用户界面：QML is an acronym that stands for Qt Meta-object Language. It is a declarative programming language that is part of the Qt framework. QML's main purpose is fast and easy creation of user interfaces for desktop, mobile and embedded systems. QML allows seamless integration of JavaScript, either directly in the QML code or by including JavaScript files.](https://riptutorial.com/qml)
 
 - [用户界面：Why you should use Qt/QML for your next cross-platform application — part 1 — desktop](https://medium.com/&commat;petar.koretic/why-you-should-use-qt-qml-for-you-next-cross-platform-application-part-1-desktop-5e6d8856b7b4)
+![Telegram desktop clients are written using Qt](document/TelegramdesktopclientsarewrittenusingQt.jpeg)
+Telegram desktop clients are written using Qt
 - [用户界面：A Book about Qt5, Model-View-Delegate](http://qmlbook.github.io/ch07-modelview/modelview.html)
 - [用户界面：Qt5的安装,选择therecipe/qt的理由是首先因为它提供的API与原生Qt以及其他binding（例如pyqt5）几乎一样](https://www.cnblogs.com/apocelipes/p/9300335.html)
 - [用户界面：如何编译使用了therecipe/qt的项目](https://www.cnblogs.com/apocelipes/p/9300335.html)

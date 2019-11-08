@@ -228,7 +228,7 @@ ApplicationWindow {
         }
         Html2IPC {
         }
-        Page7Form {
+        Mvvm {
         }
         Page8Form {
         }
