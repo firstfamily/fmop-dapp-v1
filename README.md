@@ -121,7 +121,7 @@ Telegram desktop clients are written using Qt
 - [使用 Qt WebChannel 实现 C++/QML 和 HTML 页面之间交互: 注：本文中提到的客户端和服务端其实是在同一个应用程序内，因为 WebChannel 是基于 WebSocket 实现的，所以会有这种客户端和服务端的叫法。](https://www.pressc.cn/1085.html)
 - [Best Practices in Qt Quick/QML - Part I](https://www.slideshare.net/ICSinc/best-practices-in-qt-quick-qml-part-1)
 - [10 Keys to Ensuring Success for Your Next Qt Project](https://www.slideshare.net/ICSinc/10-keys-to-ensuring-success-for-your-next-qt-project)
-- ![Gxcel application architecture SAAS](document/gxcel-arch.png)
+- ![Gxcel application architecture SAAS](document/DuolaLoveperPlatform.png)
 
 - [5 Advanced Go Testing Techniques](https://hackernoon.com/5-advanced-go-testing-techniques-7199b686b6c1)
 - [Write behavioral tests in your editor. Get live results in your browser.](http://goconvey.co/)
