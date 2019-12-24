@@ -131,7 +131,7 @@ Telegram desktop clients are written using Qt
 - [Creating an opinionated GraphQL server with Go](https://dev.to/cmelgarejo/creating-an-opinionated-graphql-server-with-go-part-3-3aoi)
 
 ### Desktop APP 
-- ![Desktop APP architecture](document/10-keys-to-ensuring-success-for-your-next-qt-project-9-638.jpg)
+- [![Desktop APP architecture](document/10-keys-to-ensuring-success-for-your-next-qt-project-9-638.jpg)](https://www.slideshare.net/ICSinc/10-keys-to-ensuring-success-for-your-next-qt-project)
     - [Data Layer(Local Data Storage): Embedded database in go for desktop: BadgerHold is an embeddable NoSQL store for querying Go types built on Badger](https://github.com/timshannon/badgerhold)
     - [Communication Layer(TCP): 58到家通用实时消息平台架构细节（Qcon2016）](https://mp.weixin.qq.com/s?__biz=MjM5ODYxMDA5OQ==&mid=2651959410&idx=1&sn=b91b5721ca394d15fb391097eddb752d&scene=21)
     - [Communication Layer(TCP): The Leader in Open Source IoT Messaging Scalable and Reliable Real-time MQTT Messaging Engine for IoT in 5G Era](https://www.emqx.io/)
@@ -140,6 +140,12 @@ Telegram desktop clients are written using Qt
     - [Creating C++ Plugins for QML](https://doc.qt.io/qt-5/qtqml-modules-cppplugins.html)
     - [How to Create Qt Plugins:The Low-Level API: Extending Qt Applications. Not only Qt itself but also Qt application can be extended through plugins. This requires the application to detect and load plugins using QPluginLoader. There are two kinds of plugins in Qt: plugins that extend Qt itself and plugins that extend applications written in Qt. ](https://doc.qt.io/qt-5/plugins-howto.html)
     - [Golang package for editing struct's fields during runtime and mapping structs to other structs.](https://github.com/Ompluscator/dynamic-struct)
+    -[可用于gxcel行表单schema定义：A schema-based form generator component for Vue.js](https://github.com/vue-generators/vue-form-generator)
+    - [vue-ele-form-generator | vue-ele-form 的表单设计器](https://awesomeopensource.com/project/dream2023/vue-ele-form-generator)
+
+### OPA
+- [![asdfasdf](document/opa-example-orderservice.png)](https://www.youtube.com/watch?v=ctr2bVmzGpk)
+
 
 ## RPA
 ![Biz table data for any team RPA_Graphics_Infographic_F](document/RPA_Graphics_Infographic_F.png)
