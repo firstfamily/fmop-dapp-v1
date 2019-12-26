@@ -29,7 +29,9 @@ The choice of Golang comes from the fact that it has the same tooling on every p
 
 - [消息获取：A GraphQL client library for Go](https://blog.machinebox.io/a-graphql-client-library-for-go-5bffd0455878)
 - [消息推送：![The Massively Scalable MQTT Broker for IoT and Mobile Applications](document/taskman/emqtt-overview.png)](http://emqtt.io/)
-
+- [This talk explains the What, Why and How of Subscriptions, how to build your own GraphQL subscriptions server and the differences to live queries.](https://about.sourcegraph.com/graphql/full-stack-subscriptions)
+- [GraphQL Live: Reactive Queries at Facebook](https://awesomereact.com/playlists/graphql-summit-2017/BSw05rJaCpA)
+- [rethinkdb 一大亮眼特性是 changefeed。它能够把数据库中某个查询结果集的改变 publish 出来，供其他人 subscribe。这个特性对 realtime collaboration 的 app 来说非常有用。我们看一个在线的项目管理系统，如果用户 A 修改了某个项目 x，我们想让所有和项目 x 相关的用户的界面立刻得到实时更新，该怎么做？](https://cloud.tencent.com/developer/article/1076926)
 - [监控剪贴板：This Go application will monitor your clipboard for urls and automatically starts download with youtube-dl.](https://github.com/hebestreit/clipboard-yt-dl)
 - [监控剪贴板：clipboard.ReadAll()](https://github.com/atotto/clipboard/blob/master/clipboard_windows.go)
 - [监控剪贴板：Monitor starts monitoring the clipboard for changes. When a change is detected, it is sent over the channel.](https://github.com/spy16/clipboard/blob/master/cmd/monitor/main.go)
@@ -350,3 +352,4 @@ Telegram desktop clients are written using Qt
 - [精益设计 设计团队如何改善用户体验 第2版+精益创业UX篇 高效用户体验设计](https://item.jd.com/24545479740.html)
 - [精益产品开发 原则 方法与实施 何勉著+用户故事地图 2本, 里面提到相关书也很好](https://item.jd.com/15058982301.html) 
 - [实例化需求 团队如何交付正确的软件](document/specificationbyexample.pdf)
+- [数睿慧车平台生态](document/serviceworkecology.rp)
