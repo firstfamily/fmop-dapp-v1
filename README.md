@@ -343,3 +343,10 @@ Telegram desktop clients are written using Qt
 
 
 ```
+
+
+
+# 产品经理
+- [精益设计 设计团队如何改善用户体验 第2版+精益创业UX篇 高效用户体验设计](https://item.jd.com/24545479740.html)
+- [精益产品开发 原则 方法与实施 何勉著+用户故事地图 2本, 里面提到相关书也很好](https://item.jd.com/15058982301.html) 
+- [实例化需求 团队如何交付正确的软件](document/specificationbyexample.pdf)

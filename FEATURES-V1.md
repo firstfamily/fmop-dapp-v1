@@ -31,6 +31,10 @@
 1. ppt编辑发布revealjs，参见[FLIPCLASSROOM](./FLIPCLASSROOM.md)
 1. [K12「知识图谱型」AI教育「真香」？](https://www.jiqizhixin.com/articles/2019-05-25)
 1. [王海峰：百度知识图谱与语义理解实践](https://www.secrss.com/articles/13652)
+1. [自生长自适应，知识系统的社交网络实践](https://36kr.com/p/5213250)
+1. [基于社交网络知识图谱的知识推理系统及方法](https://patentimages.storage.googleapis.com/24/75/12/3b5c615db7c910/CN107016072A.pdf)
+1. [基于社交网络的知识图谱构建技术研究](http://kns.cnki.net/kcms/detail/detail.aspx?filename=1018841734.nh&dbcode=CDFD&dbname=CDFDTEMP&v=)
+1. [知识图谱全讲解 + 电商应用场景](https://blog.csdn.net/randompeople/article/details/89426073)
 
 ### Win/Mac桌面RuiOPR
 *桌面应用不提供用户注册、忘记密码等已在RuiAPP上已有的功能,以便更好推广RuiAPP，所以RuiOPR也不支持第三方如微信进行扫码登录*
@@ -73,7 +77,11 @@
 - [商品知识图谱的数据大图](https://zhuanlan.zhihu.com/p/33075573)
 - [整理知识图谱相关学习资料](https://github.com/husthuke/awesome-knowledge-graph)
 - [大众点评搜索基于知识图谱的深度学习排序实践](https://www.infoq.cn/article/JZ_qdBDiMc1pHpBMDR2Q)
-
+- [平安养老险国内独家引进interRAI长期照护评估工具](http://www.pingan.cn/zh/common/cn_news/1479794689059.shtml)
+- [interRAI家庭照护评估工具在社区居家老年人综合评估与照护需求分析中的初步应用 ](http://www.interraichina.com.cn/images/upload/file/20170123/1485158750311029.pdf)
+- [基于 interRAI 评估系统的居家养老信息化体系建设可行性研究 ](http://www.interraichina.org/images/upload/file/20160425/1461552989165269.pdf)
+- [【评估动态】养老服务信息化与标准化：以interRAI体系为例](http://www.ssidc.org/zhihui/f3/2017/0308/756.html)
+- [【杨金宇专栏】长期照护系列之四:InterRAI的信息化](https://www.hit180.com/3742.html/2)
 
 ## Cadenceworkflow.io 任务协调
 - [Cadence: The Only Workflow Platform You'll Ever Need](https://www.slideshare.net/MaximFateev/cadence-the-only-workflow-platform-youll-ever-need)
@@ -102,7 +110,6 @@ The other thing this allows you to do is keep soft sticky state from the device 
 
 知识图谱本身可以看作是一种新型的信息系统基础设施。从数据维度上讲，要求用更规范的语义提升企业数据的质量，用链接数据的思想提升企业数据之间的关联度，终极目标是将非结构、无显式关联的粗糙数据提炼为结构化、高度关联的高质量知识。每个企业都应该将知识图谱作为一种面向数据的信息系统基础设施进行持续性建设。
 
-知识图谱嵌入（Knowledge Graph Embeddding）：将知识图谱中包括实体和关系的内容映射到连续向量空间的方法
-
+- 知识图谱嵌入（Knowledge Graph Embeddding）：将知识图谱中包括实体和关系的内容映射到连续向量空间的方法
 - 知识抽取，养老产业方面的知识从养老政策、新闻报道、医疗健康文章中进行知识提取并存入知识图谱中
 - 知识图谱包含抽象知识的本体层和描述具体事实的实力层。本体层用于描述特定领域中的抽象概念、属性、公理；实例层描述具体的实体对象、实体间的关系，包含大量的事实和数据。
