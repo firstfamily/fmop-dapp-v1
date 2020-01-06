@@ -65,7 +65,9 @@
 1. 界面上图谱方式导航快速跳入对应消息指向的内容
 1. sdk集成其他系统消息如物流信息、系统bug信息...
 1. 九宫格我明天要做的事樊登读书
-
+![](document/IMKGDiagram.png)
+    - 任务有预定义的、随时定义的
+    
 
 
 # 讨论技术架构
@@ -118,13 +120,16 @@
 - [Open Educational Resource Schema](http://oerschema.org/)
 - [Tasks State Machine : Tasks start in a Created state. Once they have been assigned to an owner they transition to the Ready state, indicating that they are ready to be performed. Once the owner initiates activity on the task, the task transitions to the In Progress state, indicating that work is being performed. Upon normal completion, the task enters the Completed state.](https://www.hl7.org/fhir/task.html)
 - [An Ontology for Collaborative Tasks in Multi-agent Systems](http://ceur-ws.org/Vol-1442/paper_4.pdf)
+- [I get often asked how and where schema.org/Actions are used in practice: what real life products it enables.](http://blog.sgo.to/2014/09/schemaorg-actions-implementations.html)
+- [A Proposal For schema.org Actions](http://blog.sgo.to/2014/02/a-proposal-for-schema-org-actions.html)
+- [An Ontology for Collaborative Tasks in Multi-agent Systems]()
 
 Table 6 provides a listing of cybersecurity skills. A skill is the observable competence to perform a learned psychomotor act.
 
 Ability is competence to perform an
 observable behavior or a behavior that results in an observable product.
 
-
+National Initiative for Cybersecurity Education (NICE) Cybersecurity Workforce Framework
 
 
     如上图所示，完整的认知图谱包含以下几个部分：
