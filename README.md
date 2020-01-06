@@ -28,9 +28,11 @@ The choice of Golang comes from the fact that it has the same tooling on every p
 - [用户界面：Package systray is a cross platfrom Go library to place an icon and menu in the notification area. Tested on Windows 8, Mac OSX, Ubuntu 14.10 and Debian 7.6.](https://github.com/getlantern/systray)
 
 - [消息获取：A GraphQL client library for Go](https://blog.machinebox.io/a-graphql-client-library-for-go-5bffd0455878)
+- [easygraphql is an open source project that's is composed of some GraphQL tools, focused on the minimum configuration possible to use them](https://easygraphql.com/docs/getting-started/overview)
 - [消息推送：![The Massively Scalable MQTT Broker for IoT and Mobile Applications](document/taskman/emqtt-overview.png)](http://emqtt.io/)
 - [This talk explains the What, Why and How of Subscriptions, how to build your own GraphQL subscriptions server and the differences to live queries.](https://about.sourcegraph.com/graphql/full-stack-subscriptions)
 - [GraphQL Live: Reactive Queries at Facebook](https://awesomereact.com/playlists/graphql-summit-2017/BSw05rJaCpA)
+- [![full-stack-subscriptions](document/gqlsubscriptionflow.gif)](https://about.sourcegraph.com/graphql/full-stack-subscriptions)
 - [rethinkdb 一大亮眼特性是 changefeed。它能够把数据库中某个查询结果集的改变 publish 出来，供其他人 subscribe。这个特性对 realtime collaboration 的 app 来说非常有用。我们看一个在线的项目管理系统，如果用户 A 修改了某个项目 x，我们想让所有和项目 x 相关的用户的界面立刻得到实时更新，该怎么做？](https://cloud.tencent.com/developer/article/1076926)
 - [监控剪贴板：This Go application will monitor your clipboard for urls and automatically starts download with youtube-dl.](https://github.com/hebestreit/clipboard-yt-dl)
 - [监控剪贴板：clipboard.ReadAll()](https://github.com/atotto/clipboard/blob/master/clipboard_windows.go)
@@ -131,6 +133,11 @@ Telegram desktop clients are written using Qt
 - [如何基于Docker和Jenkins打造⾯向初创公司的持续集成体系](https://zhuanlan.zhihu.com/p/20708954)
 - [Exploring the landscape of Go testing frameworks](https://bmuschko.com/blog/go-testing-frameworks/)
 - [Creating an opinionated GraphQL server with Go](https://dev.to/cmelgarejo/creating-an-opinionated-graphql-server-with-go-part-3-3aoi)
+
+## Android 混合开发
+- [https://www.hellsoft.se/loading-local-web-content-on-android/](loading-local-web-content-on-android)
+- [android-load-html-and-javascript-in-webview](https://medium.com/@parsaniahardik/android-load-html-and-javascript-in-webview-from-assets-ae2b2630e10b)
+- [Building Hybrid Android Apps with Java and JavaScript by Nitin Khanna, Nizamettin Gok](https://www.oreilly.com/library/view/building-hybrid-android/9781449361907/ch04.html)
 
 ### Desktop APP 
 - [![Desktop APP architecture](document/10-keys-to-ensuring-success-for-your-next-qt-project-9-638.jpg)](https://www.slideshare.net/ICSinc/10-keys-to-ensuring-success-for-your-next-qt-project)
@@ -353,5 +360,8 @@ Telegram desktop clients are written using Qt
 - [精益产品开发 原则 方法与实施 何勉著+用户故事地图 2本, 里面提到相关书也很好](https://item.jd.com/15058982301.html) 
 - [产品需求分析神器:KANO模型分析法](https://www.wandouip.com/t5i279479/)
 - [实例化需求 团队如何交付正确的软件](document/specificationbyexample.pdf)
-
+- [需求第一篇 - 你以为你以为的就是你以为的吗](https://www.jianshu.com/p/859133c24cf0)
+- [实例化需求：用户故事拆分的更好线索](https://blog.csdn.net/gitchat/article/details/78086515)
+- [一个完整的需求Product backlog = 用户故事+ 优先级 + 验收标准。](http://www.woshipm.com/pmd/1583896.html)
+- [![backlog英文意思为“积压的工作”。 product backlog是一个具有优先级的需求列表， 并对每个需求进行了粗略的估算。](document/productbacklogexample.png)](http://www.zhoujingen.cn/blog/2767.html)
 - [数睿慧车平台生态](document/serviceworkecology.rp)
