@@ -66,8 +66,10 @@
 1. sdk集成其他系统消息如物流信息、系统bug信息...
 1. 九宫格我明天要做的事樊登读书
 ![](document/IMKGDiagram.png)
-    - 任务有预定义的、随时定义的
-    
+    - 任务有预定义的如[National Initiative for Cybersecurity Education (NICE) Cybersecurity Workforce Framework](document/NIST.SP.800-181.pdf)、随时定义的如[An Ontology for Collaborative Tasks in Multi-agent Systems](document/task-ontology.pdf)
+    - [Tasks State Machine Tasks start in a Created state. Once they have been assigned to an owner they transition to the Ready state, indicating that they are ready to be performed. Once the owner initiates activity on the task, the task transitions to the In Progress state, indicating that work is being performed. Upon normal completion, the task enters the Completed state. If there is a failure during the task execution that prevents the task from being completed, it can also enter a Failed state, indicating an abnormal termination of the task. A task in any non-terminal state may also be Cancelled, representing an abnormal termination of the task due to external forces, rather than an error condition.](https://www.hl7.org/fhir/task.html)
+    - [proposal: type for describing Tasks](https://github.com/schemaorg/schemaorg/issues/1818)
+
 
 
 # 讨论技术架构

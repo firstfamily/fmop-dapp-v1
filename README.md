@@ -66,6 +66,7 @@ The choice of Golang comes from the fact that it has the same tooling on every p
 
 # FMOP Manager Dapp v1
 ![Biz table data for any team FMSOP Dapp v1](document/gxcel-manager-dapp.png)
+![持久性可管理内置知识图谱即时通信](document/imkg-manager-dapp.png)
 
 
 ## 技术栈
