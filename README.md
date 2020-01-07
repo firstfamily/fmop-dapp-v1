@@ -366,4 +366,5 @@ Telegram desktop clients are written using Qt
 - [一个完整的需求Product backlog = 用户故事+ 优先级 + 验收标准。](http://www.woshipm.com/pmd/1583896.html)
 - [![backlog英文意思为“积压的工作”。 product backlog是一个具有优先级的需求列表， 并对每个需求进行了粗略的估算。](document/productbacklogexample.png)](http://www.zhoujingen.cn/blog/2767.html)
 - [![uisdc-storymap-20171129-28](document/uisdc-storymap-20171129-28.jpg)](https://www.uisdc.com/user-maps-design-ali-case)
+- [![SDtool-4：用户故事地图 User Story Mapping](document/user-story-mapping.webp)](https://www.jianshu.com/p/0f042ff8a5f4)
 - [数睿慧车平台生态](document/serviceworkecology.rp)
