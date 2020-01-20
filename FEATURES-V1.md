@@ -43,7 +43,8 @@
 1. 展示二维码以便使用RuiApp扫码登录
 1. RuiOPR可以安装在Windows、Macos、Linux，可以与RuiApp在多个安装实例同时保持登录而不是像微信一样只能在windows或macos登录，但是RuiAPP上能显眼看出现在保持登录的终端列表。
 1. 通过RuiApp可以下线其他客户端，当然RuiApp也可以在多个手机端同时保持登录，也可以被踢下线。根据老人子女关系可以关联成多个家庭如姥姥家、奶奶家，登录子女都可以获取家庭老人的信息如政购项目信息及享受条件。同时IM信息多端保持同步。
-
+1. [Visual Studio Code: Run in Windows Subsystem for Linux](https://code.visualstudio.com/remote-tutorials/wsl/run-in-wsl)
+1. [Using Visual Studio Code for Writing Qt Applications](https://www.kdab.com/using-visual-studio-code-for-writing-qt-applications/)
 #### 应用协作
 1. 作为未登录用户，可以使用RuiAPP扫描RuiOPR桌面应用的登录二维码登录RuiOPR https://www.jianshu.com/p/7f072ac61763
 
@@ -63,21 +64,53 @@
 1. 沟通过程中标记是否问题以便回答，是否任务以便分配人员跟进处理，参见- [Improving the User Experience with Uber’s Customer Obsession Ticket Routing Workflow and Orchestration Engine](https://eng.uber.com/customer-obsession-ticket-routing-workflow-and-orchestration-engine/)
 1. 根据知识图谱推荐分配适合人员跟进处理任务，如根据工作时间、个人技能、老人情况、服务要求推荐分配服务人员；任务分配机制也用于进行业务派单。
 1. 界面上图谱方式导航快速跳入对应消息指向的内容
+1. 导航条目可能打开多个tab如：部门下的消息tab、部门下的成员tab
+1. 点击某个消息可能打开多个tab如：该消息的Thread、该消息的知识图谱推荐
+1. 导航条目目就有多个potentialAction，这样才能决定打开多个相关tab，如部门条目就有ListMemberAction,ListMessageAction
 1. sdk集成其他系统消息如物流信息、系统bug信息...
 1. 九宫格我明天要做的事樊登读书
+1. 编辑或发送消息系统后台根据知识图谱自动推荐相关内容
+1. [Discourse sits somewhere between emails and real-time chat systems. You feel like you’re having a real-time conversation. But it won’t interrupt you in the middle of a 3-hour block of time you’ve set for distraction-free coding. Discourse has become such an integral part of our company that we abandoned making decisions in meetings entirely. ](https://blog.dgraph.io/post/wisemonk/)
+1. [Real-time chat with Redis Streams](https://get-reddie.com/blog/building-real-time-chat-with-redis-streams/)
+1. [Real-Time Data Processing Using Redis Streams and Apache Spark Structured Streaming](https://www.infoq.com/articles/data-processing-redis-spark-streaming/)
+1. [Redis Streams is essentially a message queue, but it is also unique compared to other message middleware such as Kafka and RocketMQ. ... Although the existing PUB/SUB and BLOCKED LIST can be used as a message queue service in simple scenarios, Redis Streams is more comprehensive.](https://www.alibabacloud.com/blog/redis-streams-redis-5-0s-newest-data-type_593816)
+1. [Redis Streams: 每个消费组内可以有多个消费者(Consumer)，同组内的消费者之间是竞争关系，每个消费者消费的消息是不同的，任意一个消费者读取了消息都会使游标last_id往前移动。在Stream之前，Redis PUB/SUB亦可可实现消息的传递及广播，但消息不支持持久化，不记录消费端状态，并且“Fire and Forgot”，可靠性无法保证。](https://cloud.tencent.com/developer/article/1456457)
+1. [Redis Stream实战——IRC系统](https://juejin.im/post/5b320119e51d45589b1a8646)
+1. [基于Redis实现消息队列典型方案](http://www.hellokang.net/redis/message-queue-by-redis.html)
+1. [当多个消费者（consumer）同时消费一个消息队列时，可以重复的消费相同的消息，就是消息队列中有10条消息，三个消费者都可以消费到这10条消息。但有时，我们需要多个消费者配合协作来消费同一个消息队列，就是消息队列中有10条消息，三个消费者分别消费其中的某些消息，比如消费者A消费消息1、2、5、8，消费者B消费消息4、9、10，而消费者C消费消息3、6、7。也就是三个消费者配合完成消息的消费，可以在消费能力不足，也就是消息处理程序效率不高时，使用该模式。该模式就是消费者组模式。](http://www.hellokang.net/redis/stream.html)
+1. [Since Streams was not available before Redis version 5, some people opted to use Pub/Sub in situations where they would have preferred better delivery guarantees, and are now making the switch. So, if you’re building a new application or unsatisfied with a current one that uses Pub/Sub, consider Redis Streams if what you need is “Pub/Sub, but with the ability to resume on disconnection without losing messages.” Stream-based asynchronous communication：This technique works best for log processing, Internet of Things (IoT) devices and microservices, in addition to Slack-style chat applications (i.e., with history).](https://redislabs.com/blog/what-to-choose-for-your-synchronous-and-asynchronous-communication-needs-redis-streams-redis-pub-sub-kafka-etc-best-approaches-synchronous-asynchronous-communication/)
+1. [在分布式系统中，当您需要协调时，通常需要共享状态，反之亦然。忽视这一事实往往会导致过于复杂的解决方案。Redis 非常了解这一点，这也是其独特设计背后的原因之一。如果你接受这个原则，你会发现在给定正确的原语的情况下，偶尔可以用少量命令解决难题，这正是 Redis 给你的。例如，这是您可以在事务上将条目附加到流，将任务推送到队列（的开头）以及发布到 Pub / Sub 的方式](https://mp.weixin.qq.com/s/bUx6lcknmWK2vjFjVSNGUA)
+    ```
+    MULTI
+        XADD logs:service1 * level error req-id 42 stack-trace"..."
+        LPUSH actions-queue "RESTART=service1"
+        PUBLISH live-notifs "New error event in service1!"
+    EXEC
+    ```
+1. [How to Build a Messaging App like Whatsapp, Telegram, Slack](https://www.simform.com/how-to-build-messaging-app-whatsapp-telegram-slack/)
+1. [Mongodb: However, we can use capped collections with a tailable cursor that remains open, even after the client consumed all initially returned data – making the infinite data stream. This approach is useful for applications dealing with event streams, like chat messages, or stock updates.](https://www.baeldung.com/spring-data-mongodb-tailable-cursors)
+1. [Mongodb: MongoDB自动删除过期数据--TTL索引](https://blog.csdn.net/jianlong727/article/details/54631124)
+1. [We’ll show how you can build recommendations via two approaches: Content-based filtering and Collaborative filtering. ](https://blog.dgraph.io/post/recommendation/)
+1. [Using Dgraph for Aviation Data: Create, Import and Query a Dataset](https://bytefish.de/blog/dgraph/)
 ![](document/IMKGDiagram.png)
+![持久性可管理内置知识图谱即时通信](document/imkg-manager-dapp.png)
     - 任务有预定义的如[National Initiative for Cybersecurity Education (NICE) Cybersecurity Workforce Framework](document/NIST.SP.800-181.pdf)、随时定义的如[An Ontology for Collaborative Tasks in Multi-agent Systems](document/task-ontology.pdf)
     - [Tasks State Machine Tasks start in a Created state. Once they have been assigned to an owner they transition to the Ready state, indicating that they are ready to be performed. Once the owner initiates activity on the task, the task transitions to the In Progress state, indicating that work is being performed. Upon normal completion, the task enters the Completed state. If there is a failure during the task execution that prevents the task from being completed, it can also enter a Failed state, indicating an abnormal termination of the task. A task in any non-terminal state may also be Cancelled, representing an abnormal termination of the task due to external forces, rather than an error condition.](https://www.hl7.org/fhir/task.html)
     - [proposal: type for describing Tasks](https://github.com/schemaorg/schemaorg/issues/1818)
 
 
 
+
+
 # 讨论技术架构
 
 - ![Gxcel application architecture SAAS](document/DuolaLoveperPlatform.png)
+- [![message-server2service](document/message-server2service.jpg)](https://www.youtube.com/watch?v=_M-oHxknfnI)
+- [Square: How Vitess Enables ‘Near Unlimited Scale’ for Cash App](https://www.cncf.io/square-case-study/)
 
 ## RSocket.io 连接
 - [RSocket是一种新的，消息驱动的二进制协议，它标准化了云中的通信方法。它有助于以一致的方式解决常见的应用程序问题，并且它支持多种语言（例如java，js，python）和传输层（TCP，WebSocket，Aeron）](https://www.jdon.com/52741)
+- [Differences between gRPC and RSocket: If you do not like RPC-generated code, you can instead use IPC-style code to handle a message. The IPC code also allows you to specify what serializers to use and allows you to use send methods other than protobuf. GraphQL support is being added to use the IPC-style code. This will support query, mutation, and subscription using GraphQL.](https://medium.com/netifi/differences-between-grpc-and-rsocket-e736c954e60)
 - [RSocket快速入门](https://yq.aliyun.com/articles/721916)
 - [雷卷-RSocket Broker在阿里云上的服务-mesh，stream and iot](https://www.modb.pro/doc/1349)
 - [Facebook Flipper with RSocket-cpp](https://github.com/facebook/flipper/blob/master/Specs/RSocket/0.10.0/RSocket.podspec)
@@ -88,6 +121,7 @@
 
 ## DGraph.io  数据图网
 - [Running Stack Overflow on Dgraph](https://blog.dgraph.io/post/sql-vs-dgraph/)
+- [The most common use case that Dgraph is solving is to unify multiple data silos stuck in traditional databases or across different backends, into one Dgraph powered platform.Software is eating the world and social is eating the apps. Today’s apps are built keeping social interactions in mind, where relationships are as important as data itself.中文（简体）软件正在吞噬世界，社交正在吞噬应用程序。当今的应用程序的构建牢记社交互动，在社交中，关系与数据本身一样重要。](https://blog.dgraph.io/post/how-dgraph-labs-raised-series-a/)
 - ![Gxcel application architecture SAAS](document/dgraph-schema.png)
 - [知识图谱 4.2-知识图谱在电商领域中的应用实践](https://juejin.im/post/5cfb1f7c6fb9a07eeb1399f6)
 - [商品知识图谱的数据大图](https://zhuanlan.zhihu.com/p/33075573)
@@ -153,6 +187,8 @@ National Initiative for Cybersecurity Education (NICE) Cybersecurity Workforce F
 
 ## Bigdata Analysis 大数据分析
 - [Pentaho’s data integration and analytics platform enables organizations to access, prepare, and analyze all data from any source, in any environment.](https://www.hitachivantara.com/en-us/products/data-management-analytics/pentaho-platform.html)
+- [Dremio 杀死所有数据仓库](http://www.sohu.com/a/366930281_465914)
+- [Querying Wikidata RDF with SQL using RDF2X](https://medium.com/@david.prihoda/querying-wikidata-rdf-with-sql-using-rdf2x-324f18219adf)
 
 ## IM Matrix.org
 - [Clients may want to receive push notifications when events are received at the homeserver. This is managed by a distinct entity called the Push Gateway.](https://matrix.org/docs/spec/push_gateway/latest)

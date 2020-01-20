@@ -1,0 +1,6 @@
+1. [A beginner’s guide to database multitenancy](https://vladmihalcea.com/database-multitenancy/)
+1. [Why Multi-Tenancy Application Architecture Matters in 2018](https://www.konstantinfo.com/blog/why-multi-tenancy-application-architecture-matters/)
+1. [Most SaaS Applications Are Multi-Tenant. SaaS apps often have a natural dimension on which to distribute data across nodes—dimensions such as tenant, customer, or account_id. Which means SaaS apps have a data model that is a good fit for a distributed database like Citus: just shard by tenant_id.](https://www.citusdata.com/)
+1. [Vitess is a database solution for deploying, scaling and managing large clusters of MySQL instances.](https://vitess.io/docs/overview/whatisvitess/)
+1. [Scaling Square Cash with Vitess Karel A Sague and Jon Tirsen](https://www.youtube.com/watch?v=SkCYY-6LHYU)
+1. [Square: How Vitess Enables ‘Near Unlimited Scale’ for Cash App](https://www.cncf.io/square-case-study/)

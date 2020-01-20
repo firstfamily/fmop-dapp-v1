@@ -28,7 +28,9 @@ The choice of Golang comes from the fact that it has the same tooling on every p
 - [用户界面：Package systray is a cross platfrom Go library to place an icon and menu in the notification area. Tested on Windows 8, Mac OSX, Ubuntu 14.10 and Debian 7.6.](https://github.com/getlantern/systray)
 
 - [消息获取：A GraphQL client library for Go](https://blog.machinebox.io/a-graphql-client-library-for-go-5bffd0455878)
+- [GraphQL over TCP?](https://www.reddit.com/r/graphql/comments/8zruzz/graphql_over_tcp/)
 - [easygraphql is an open source project that's is composed of some GraphQL tools, focused on the minimum configuration possible to use them](https://easygraphql.com/docs/getting-started/overview)
+- [GraphQL, Streaming, and RESTful API development Come Together in this Open Source Software](https://hackernoon.com/swell-where-graphql-streaming-and-restful-api-development-unite-7hpj312c)
 - [消息推送：![The Massively Scalable MQTT Broker for IoT and Mobile Applications](document/taskman/emqtt-overview.png)](http://emqtt.io/)
 - [This talk explains the What, Why and How of Subscriptions, how to build your own GraphQL subscriptions server and the differences to live queries.](https://about.sourcegraph.com/graphql/full-stack-subscriptions)
 - [GraphQL Live: Reactive Queries at Facebook](https://awesomereact.com/playlists/graphql-summit-2017/BSw05rJaCpA)
@@ -65,9 +67,36 @@ The choice of Golang comes from the fact that it has the same tooling on every p
 
 
 # FMOP Manager Dapp v1
-![Biz table data for any team FMSOP Dapp v1](document/gxcel-manager-dapp.png)
-![持久性可管理内置知识图谱即时通信](document/imkg-manager-dapp.png)
 
+## Doper：KGIM-plugin
+![持久性可管理内置知识图谱即时通信](document/imkg-manager-dapp.png)
+slack-style 历史消息管理
+
+## Doper：KGTASK-plugin
+![Biz table data for any team FMSOP Dapp v1](document/gxcel-manager-dapp.png)
+分组分类任务管理
+
+## Doper：KGFILE-plugin
+![Biz table data for any team FMSOP Dapp v1](document/gxcel-manager-dapp.png)
+分组分类文件管理
+### 支持各种常见文件如图片、视频、word、excel等文档
+- 上传、下载、删除文件版本控制
+### 支持GXCEL云表格
+- 修改定义gxcel云表格schema
+- 类似excel表格、由分组的行列数据组成，每列数据类型可能是日期、字符串、数字等普通类型，图谱里的节点类型、甚至就是行列类型
+- 每一个gxcel类似excel文件，一些元数据如创建日期、作者、地点、名称、标题、说明等，内容由分组的行列数据组织表示，列的数据类型是日期、字符串、数字等普通类型，图谱里的节点类型、甚至就是行列类型
+    Type| Description
+    ----| ----
+    int|	signed 64 bit integer
+    float|	double precision floating point number
+    string|	string
+    bool|boolean
+    id|identifiers stored as strings
+    dateTime|	RFC3339 time format with optional timezone eg: 2006-01-02T15:04:05.999999999+10:00 or 2006-01-02T15:04:05.999999999
+    geo|geometries stored using go-geom
+    node| any node of dgraph
+    rowcol| rowcol which will be defined by above types
+### 支持针对任意文件进行会话
 
 ## 技术栈
 - [Release 2.18.2: Guide for MVC, MVVM, Flux with QML](https://felgo.com/updates/release-2-18-2-guide-for-mvc-mvvm-flux-with-qml)
@@ -91,7 +120,8 @@ The choice of Golang comes from the fact that it has the same tooling on every p
 - [用户界面：When possible, use therecipe/qt + QtQuick. Qt Quick简介](https://wizardforcel.gitbooks.io/qt-beginning/content/61.html)
 
 - [用户界面：QML is an acronym that stands for Qt Meta-object Language. It is a declarative programming language that is part of the Qt framework. QML's main purpose is fast and easy creation of user interfaces for desktop, mobile and embedded systems. QML allows seamless integration of JavaScript, either directly in the QML code or by including JavaScript files.](https://riptutorial.com/qml)
-
+- [用户在电商网站中购买成功了，那么 TA 在微服务中经历了什么？目前市面主流的调用链选型有 zipkin，pinpoint，cat，skywalking，他们之间各有一些偏重点](https://cloud.tencent.com/developer/article/1496276)
+- [SkyWalking： 国人开源的产品，主要开发人员来自于华为，2019年4月17日Apache董事会批准SkyWalking成为顶级项目，支持Java、.Net、NodeJs等探针，数据存储支持Mysql、Elasticsearch等，跟Pinpoint一样采用字节码注入的方式实现代码的无侵入，探针采集数据粒度粗，但性能表现优秀，且对云原生支持，目前增长势头强劲，社区活跃，中文文档没有语言障碍 综合考虑，我们选择了SkyWalking](https://juejin.im/post/5d2bd2dfe51d45773f2e8ff3)
 - [用户界面：Why you should use Qt/QML for your next cross-platform application — part 1 — desktop](https://medium.com/&commat;petar.koretic/why-you-should-use-qt-qml-for-you-next-cross-platform-application-part-1-desktop-5e6d8856b7b4)
 ![Telegram desktop clients are written using Qt](document/TelegramdesktopclientsarewrittenusingQt.jpeg)
 Telegram desktop clients are written using Qt
@@ -134,6 +164,16 @@ Telegram desktop clients are written using Qt
 - [如何基于Docker和Jenkins打造⾯向初创公司的持续集成体系](https://zhuanlan.zhihu.com/p/20708954)
 - [Exploring the landscape of Go testing frameworks](https://bmuschko.com/blog/go-testing-frameworks/)
 - [Creating an opinionated GraphQL server with Go](https://dev.to/cmelgarejo/creating-an-opinionated-graphql-server-with-go-part-3-3aoi)
+- [Security: Chandra Guntur and Hong Liu show how they use Open Policy Agent with Spring Boot and HOCON to produce a responsibility management solution that scales to volume and performance needs.We used what is called HOCON, a Human Optimized Configuration Object Notation. I'm going to talk a little bit about how HOCON looks like.](https://www.infoq.com/presentations/opa-spring-boot-hocon/)
+- [Security:](https://www.baeldung.com/spring-security-custom-voter)
+- [Security: rsocket+spring secruity ](https://docs.spring.io/spring-security/site/docs/current/reference/html/rsocket.html)
+- [Security: opa + spring secrurity ](https://github.com/open-policy-agent/contrib/tree/master/spring_authz)
+- [Chat Server: Building the Backend of Chat applications with spring WebFlux and reactive MongoDB](https://medium.com/hacktive-devs/building-the-backend-of-chat-applications-with-spring-webflux-and-reactive-mongodb-26347a1ddce4)
+
+- [关于iOS、android、桌面应用都要考虑offline first的机制，google一下 offline first app 有很多文章，推荐看看,  fun getCryptocurrenciesFromApi()   fun getCryptocurrenciesFromDb(),重要的话：客户端开发的时候可以没有后台api准备好，我们只要客户端定义好后台来的数据及UI要求的数据格式，可以模拟mock本地数据库或数据格式来支持客户端开发，所以为什么mvc之类的分层架构很重要，获取数据的方式不会影响到UI的布局及用户操作](https://medium.com/@cdmunoz/offline-first-android-app-with-mvvm-dagger2-rxjava-livedata-and-room-part-4-2b476142e769 ) 
+- [不一定必用数据库做缓存](http://www.it-refer.com/2017/11/13/boost-lru-cache-usage/)
+- [不一定必用数据库做缓存](hhttp://tech.dianwoda.com/2018/12/29/guava-cacheshi-yong-jie-shao/)
+
 
 ## Android 混合开发
 - [https://www.hellsoft.se/loading-local-web-content-on-android/](loading-local-web-content-on-android)
@@ -150,9 +190,11 @@ Telegram desktop clients are written using Qt
     - [Creating C++ Plugins for QML](https://doc.qt.io/qt-5/qtqml-modules-cppplugins.html)
     - [How to Create Qt Plugins:The Low-Level API: Extending Qt Applications. Not only Qt itself but also Qt application can be extended through plugins. This requires the application to detect and load plugins using QPluginLoader. There are two kinds of plugins in Qt: plugins that extend Qt itself and plugins that extend applications written in Qt. ](https://doc.qt.io/qt-5/plugins-howto.html)
     - [Golang package for editing struct's fields during runtime and mapping structs to other structs.](https://github.com/Ompluscator/dynamic-struct)
-    -[可用于gxcel行表单schema定义：A schema-based form generator component for Vue.js](https://github.com/vue-generators/vue-form-generator)
+    -[可用于gxcel行表单schema定义（行列类型）：A schema-based form generator component for Vue.js](https://github.com/vue-generators/vue-form-generator)
     - [vue-ele-form-generator | vue-ele-form 的表单设计器](https://awesomeopensource.com/project/dream2023/vue-ele-form-generator)
-
+    - [桌面也需要实现deeplink：iOS-deeplink深入探索](https://www.jianshu.com/p/43f8a81dd8ca)
+    - [桌面也需要实现deeplink：深层链接是指将用户直接转到应用中的特定内容的网址。](https://developer.android.com/training/app-links)
+    
 ### OPA
 - [![asdfasdf](document/opa-example-orderservice.png)](https://www.youtube.com/watch?v=ctr2bVmzGpk)
 
@@ -368,3 +410,10 @@ Telegram desktop clients are written using Qt
 - [![uisdc-storymap-20171129-28](document/uisdc-storymap-20171129-28.jpg)](https://www.uisdc.com/user-maps-design-ali-case)
 - [![SDtool-4：用户故事地图 User Story Mapping](document/user-story-mapping.webp)](https://www.jianshu.com/p/0f042ff8a5f4)
 - [数睿慧车平台生态](document/serviceworkecology.rp)
+
+
+# 开发工程规范
+1. [阿里云code添加开发人员并使用Git管理](https://blog.csdn.net/dark00800/article/details/70990833)
+1. [如何提高一个研发团队的“代码速度”？首先，由于采取了“分支开发、主干发布”的模式，代码要从各个项目分支和迭代分支合并回master，要解决冲突，确保合并时没有漏代码。](https://developer.aliyun.com/article/617987)
+1. [如何提高一个研发团队的“代码速度”？将来，如果一个团队的“能频繁的把代码合回master”的能力做得足够好了，就可以完全抛弃项目分支和迭代分支，每一个commit都直接checkin进master，而且master分支每天都有若干个可以发布的版本⁽⁶⁾，每个版本都可以用一个不同的release分支来保存。这就是所谓的“主干开发、分支发布”（Trunk-based Development）模式了。](https://developer.aliyun.com/article/617987)
+1. [As the two functions getRowFromDatabase and doRestCall will access some resources and we do not want to block until these resources are available, they do not return a direct value of type Row or Response any more. Instead, they return a data stream that will emit a Row or Response whenever the resource is available. With map or flatMap you can then register callback functions that will transform the value emitted by those streams and return a new stream emitting the converted values. Finally, with subscribe you can register a callback function sending the generated result to the response.](https://medium.com/javarevisited/reactive-database-access-with-r2dbc-micronaut-and-graalvm-ee9b5853260)
