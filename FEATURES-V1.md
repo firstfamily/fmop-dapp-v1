@@ -93,6 +93,7 @@
 1. [We’ll show how you can build recommendations via two approaches: Content-based filtering and Collaborative filtering. ](https://blog.dgraph.io/post/recommendation/)
 1. [Using Dgraph for Aviation Data: Create, Import and Query a Dataset](https://bytefish.de/blog/dgraph/)
 ![](document/IMKGDiagram.png)
+1. [Potential Action:There is an action status for potential actions, if you want to markup actions that have not occurred yet but are possible. potentialAction is defined by schema.org as “an idealized action in which this thing would play an 'object' role”](https://ondyr.com/what-is-action-schema/)
 ![持久性可管理内置知识图谱即时通信](document/imkg-manager-dapp.png)
     - 任务有预定义的如[National Initiative for Cybersecurity Education (NICE) Cybersecurity Workforce Framework](document/NIST.SP.800-181.pdf)、随时定义的如[An Ontology for Collaborative Tasks in Multi-agent Systems](document/task-ontology.pdf)
     - [Tasks State Machine Tasks start in a Created state. Once they have been assigned to an owner they transition to the Ready state, indicating that they are ready to be performed. Once the owner initiates activity on the task, the task transitions to the In Progress state, indicating that work is being performed. Upon normal completion, the task enters the Completed state. If there is a failure during the task execution that prevents the task from being completed, it can also enter a Failed state, indicating an abnormal termination of the task. A task in any non-terminal state may also be Cancelled, representing an abnormal termination of the task due to external forces, rather than an error condition.](https://www.hl7.org/fhir/task.html)
@@ -230,6 +231,11 @@ The other thing this allows you to do is keep soft sticky state from the device 
 - [LAVAS 基于 Vue.js 的 PWA 解决方案 帮助开发者快速搭建 PWA 应用，解决接入 PWA 的各种问题](https://lavas.baidu.com/)
 - [Here’s a screenshot of whatwebcando.today (itself a PWA, try it!) from my Chrome 52 stable on Android](https://medium.com/dev-channel/why-progressive-web-apps-vs-native-is-the-wrong-question-to-ask-fb8555addcbb)
 - [最初钉钉把主要功能都在网页版上面实现.早期的客户端都是基于网页版制作的.客户端使用nw.js把网页封装成为客户端. 后来V2.X版本核心还是nw.js但是把网页版变成了离线版(把网页版的js和css保存在本地). 后来V3.X版本开始,开发了一套rvwindow实现了本地化的GUI窗口,但核心逻辑还是js和css. 再到V4.X又重新开发了一套新的GUI,重构了整个程序框架,已经看不到网页版的影子了.](https://www.twblogs.net/a/5d7e3c2ebd9eee5327ffc8bc/zh-cn)
+
+- [使用Qt5.10自带的QtWebEngine, WebChannel进行C++和Js通信，同时进行一般浏览器需要功能的简单尝试。](https://gitee.com/52debug/QtChromeDemo)
+- [Netifi JavaScript Client¶ This page walks you through the process of implementing a Netifi client in JavaScript, based on implementation templates that you generate by running the protoc brotobuf compiler against your interface definition file.](https://docs.netifi.com/1.6.10/netifi_js_client/)
+
+
 
 
 

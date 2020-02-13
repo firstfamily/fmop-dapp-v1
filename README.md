@@ -79,6 +79,7 @@ slack-style 历史消息管理
 ## Doper：KGFILE-plugin
 ![Biz table data for any team FMSOP Dapp v1](document/gxcel-manager-dapp.png)
 分组分类文件管理
+
 ### 支持各种常见文件如图片、视频、word、excel等文档
 - 上传、下载、删除文件版本控制
 ### 支持GXCEL云表格

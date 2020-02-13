@@ -4,3 +4,4 @@
 1. [Vitess is a database solution for deploying, scaling and managing large clusters of MySQL instances.](https://vitess.io/docs/overview/whatisvitess/)
 1. [Scaling Square Cash with Vitess Karel A Sague and Jon Tirsen](https://www.youtube.com/watch?v=SkCYY-6LHYU)
 1. [Square: How Vitess Enables ‘Near Unlimited Scale’ for Cash App](https://www.cncf.io/square-case-study/)
+1. [How gRPC Is Enabling Salesforce’s Unified Interoperability Strategy](https://www.cncf.io/case-study/salesforce/)
