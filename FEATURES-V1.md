@@ -58,6 +58,15 @@
 1. 作为已登录用户，可以浏览按时间排序的任务清单
 1. 作为已登录用户，可以按照关键字搜索任务清单
 
+#### Automate routine work and focus on what counts.
+We’ve automated so many of our mundane processes. Now we’re able to spend more time on the work that requires our talent.
+![Automate routine work and focus on what counts.看看这个mp4视频](document/Gray_SPipline.mp4 )
+<video src="document/Gray_SPipline.mp4" preload="auto" loop="" poster="https://dapulse-res.cloudinary.com/video/upload/so_0p/remote_mondaycom_static/video/video-library/monday2.0-tests%20dont%20use/Gray_SPipline.jpg" playsinline="" webkit-playsinline="" autoplay="" style="width: 100%; height: 100%;"></video>
+
+Samples: 
+1. When an `email` is received create a `new lead` in `Sales pipeline`. 
+1. 当任务状态改为`完成`请立即向`关注人`发送`私信`通知
+
 ### 脑洞
 持久性可管理内置知识图谱即时通信：
 1. slack+QA+Task+知乎 
@@ -201,7 +210,6 @@ National Initiative for Cybersecurity Education (NICE) Cybersecurity Workforce F
 
 
 
-@silencecorner @郭杰 @梁家振  
 https://community.netifi.com/t/how-to-create-a-session-with-transaction-using-rsocket-rpc/120
 Yes - because is connection oriented you can tie session data to the RSocket connection life cycle，所以不一定像http每次请求都要带上jwt之类的
 
