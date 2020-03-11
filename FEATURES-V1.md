@@ -107,8 +107,11 @@ Samples:
     - 任务有预定义的如[National Initiative for Cybersecurity Education (NICE) Cybersecurity Workforce Framework](document/NIST.SP.800-181.pdf)、随时定义的如[An Ontology for Collaborative Tasks in Multi-agent Systems](document/task-ontology.pdf)
     - [Tasks State Machine Tasks start in a Created state. Once they have been assigned to an owner they transition to the Ready state, indicating that they are ready to be performed. Once the owner initiates activity on the task, the task transitions to the In Progress state, indicating that work is being performed. Upon normal completion, the task enters the Completed state. If there is a failure during the task execution that prevents the task from being completed, it can also enter a Failed state, indicating an abnormal termination of the task. A task in any non-terminal state may also be Cancelled, representing an abnormal termination of the task due to external forces, rather than an error condition.](https://www.hl7.org/fhir/task.html)
     - [proposal: type for describing Tasks](https://github.com/schemaorg/schemaorg/issues/1818)
+1. [The Future of Local Search: 20+ Predictions for 2020](https://www.brightlocal.com/blog/the-future-of-local-search-20-predictions-for-2020/)
 
-
+### 脑洞2
+1. Toastmaster的Doper或者pwa应用点击动作、输入内容作为消息message通过rsocket发给Coworker的Doper或者pwa
+1. Cowoker的Doper或者pwa接到点击动作、输入内容的消息message,解释消息自动实施点击动作、输入内容
 
 
 
